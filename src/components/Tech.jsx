@@ -10,49 +10,135 @@ import { TbBrandMysql } from "react-icons/tb";
 import { SiPostman } from "react-icons/si";
 import { SiPrisma } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
+import { animate, motion } from "framer-motion";
+
+const iconWariants = (duration) => ({
+  initial: { y: -10 },
+  animate: {
+    y: [10, -10],
+    transition: {
+      duration: duration,
+      ease: "linear",
+      repeat: Infinity,
+      repeatType: "reverse",
+    },
+  },
+});
 
 const Tech = () => {
   return (
     <div className="border-b border-neutral-900 pb-24">
-      <h2 className="my-20 text-center text-4xl">Tech Stack</h2>
-      <div className="flex flex-wrap items-center justify-center gap-4">
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+      <motion.h2
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 1.5 }}
+        className="my-20 text-center text-4xl"
+      >
+        Tech Stack
+      </motion.h2>
+      <motion.div
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -100 }}
+        transition={{ duration: 1.5 }}
+        className="flex flex-wrap items-center justify-center gap-4"
+      >
+        <motion.div
+          variants={iconWariants(2.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
           <RiReactjsLine className="text-4xl text-cyan-400" />
-        </div>
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        </motion.div>
+        <motion.div
+          variants={iconWariants(3)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
           <TbBrandNextjs className="text-4xl" />
-        </div>
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        </motion.div>
+        <motion.div
+          variants={iconWariants(5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
           <IoLogoJavascript className="text-4xl text-[#F0DB4F]" />
-        </div>
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        </motion.div>
+        <motion.div
+          variants={iconWariants(2)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
           <SiTypescript className="text-4xl text-[#3178c6]" />
-        </div>
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        </motion.div>
+        <motion.div
+          variants={iconWariants(6)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
           <FaCss3Alt className="text-4xl text-blue-500" />
-        </div>
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        </motion.div>
+        <motion.div
+          variants={iconWariants(4)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
           <RiTailwindCssFill className="text-4xl text-[#06b6d4]" />
-        </div>
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        </motion.div>
+        <motion.div
+          variants={iconWariants(2.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
           <FaGithub className="text-4xl text-white" />
-        </div>
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        </motion.div>
+        <motion.div
+          variants={iconWariants(3)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
           <SiExpress className="text-4xl" />
-        </div>
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        </motion.div>
+        <motion.div
+          variants={iconWariants(5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
           <FaNodeJs className="text-4xl text-[#68a063]" />
-        </div>
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        </motion.div>
+        <motion.div
+          variants={iconWariants(2)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
           <TbBrandMysql className="text-4xl text-[#00758f]" />
-        </div>
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        </motion.div>
+        <motion.div
+          variants={iconWariants(6)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
           <SiPrisma className="text-4xl" />
-        </div>
-        <div className="rounded-2xl border-4 border-neutral-800 p-4">
+        </motion.div>
+        <motion.div
+          variants={iconWariants(4)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
           <SiPostman className="text-4xl text-[#EF5B25]" />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };
