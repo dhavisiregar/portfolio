@@ -2,6 +2,7 @@ import project1 from "../assets/1.png";
 import project2 from "../assets/2.png";
 import project3 from "../assets/3.png";
 import project4 from "../assets/4.png";
+import project5 from "../assets/5.png";
 
 export const HERO_CONTENT = `Enthusiastic and dedicated Full-Stack Web Development student with a keen interest in building innovative digital solutions. Currently honing my skills in both front-end and back-end technologies, including HTML, CSS, JavaScript, Node.js, and more. Eager to leverage my educational background and hands-on experience gained from various projects to contribute to dynamic teams and create impactful web applications. Passionate about learning new technologies and solving complex problems, I am committed to continuous growth and development in the field of web development.`;
 
@@ -56,6 +57,13 @@ export const PROJECTS = [
     image: project4,
     description: "It's a calculator!",
     technologies: ["React.js", "Tailwind CSS", "JavaScript"],
+  },
+  {
+    title: "Weather App",
+    image: project5,
+    description:
+      "This application allows you to get up-to-date weather information worldwide with a clean and intuitive interface.",
+    technologies: ["React.js", "CSS", "JavaScript"],
   },
 ];
 
