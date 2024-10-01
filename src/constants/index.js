@@ -11,7 +11,7 @@ export const ABOUT_TEXT = `As a Full Stack Web Development Student at Purwadhika
 
 export const EXPERIENCES = [
   {
-    year: "May 2024 - Present",
+    year: "May 2024 - Sep 2024",
     role: "Full Stack Web Development Student",
     company: "Purwadhika Digital Technology School",
     description: `My expertise in HTML, CSS, Typescript, React.js, Next.js, JavaScript, Tailwind CSS, and other modern frameworks enables me to build efficient and scalable front-ends. I have a solid understanding of back-end technologies as well, including MySQL, Node.js, and Express.js.`,
@@ -27,43 +27,6 @@ export const EXPERIENCES = [
     role: "Electrical Engineering Intern",
     company: "PT. Graha Usaha Teknik",
     description: `Studying the project implementation process starts with engineering, followed by the process of purchasing the required materials, arranging the delivery of goods to be installed at the work location (site), procedures for installing equipment in the field (site), and subsequent testing as outlined in a work progress report.`,
-  },
-];
-
-export const PROJECTS = [
-  {
-    title: "Company Website",
-    image: project1,
-    description:
-      "Helvete Records, established in 1991, is a premier record label and retail destination dedicated to delivering the most intense and authentic metal music experience.",
-    technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
-  },
-  {
-    title: "Frozen Food Website",
-    image: project2,
-    description:
-      "At TriDi Frozen Food, we prioritize offering the highest quality frozen food products for you. Our mission is to provide delicious, convenient, and nutritious options that make meal preparation easier for you and your family.",
-    technologies: ["React.js", "Tailwind CSS", "TypeScript"],
-  },
-  {
-    title: "Drug Store Website",
-    image: project3,
-    description:
-      "Welcome to Dhavi Farma, where your health and comfort are our top priorities. We are a trusted pharmacy offering a wide range of medications, health supplements, and personal care products to meet the health needs of you and your family.",
-    technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
-  },
-  {
-    title: "Calculator App",
-    image: project4,
-    description: "It's a calculator!",
-    technologies: ["React.js", "Tailwind CSS", "JavaScript"],
-  },
-  {
-    title: "Weather App",
-    image: project5,
-    description:
-      "This application allows you to get up-to-date weather information worldwide with a clean and intuitive interface.",
-    technologies: ["React.js", "CSS", "JavaScript"],
   },
 ];
 
