@@ -4,6 +4,7 @@ import project2 from "../assets/2.png";
 import project3 from "../assets/3.png";
 import project4 from "../assets/4.png";
 import project5 from "../assets/5.png";
+import project6 from "../assets/6.png";
 import { motion } from "framer-motion";
 
 const Projects = () => {
@@ -21,6 +22,9 @@ const Projects = () => {
   };
   const handleClick5 = () => {
     window.location.href = "https://weather-app-cyan-seven-46.vercel.app/";
+  };
+  const handleClick6 = () => {
+    window.location.href = "https://rakamin-mini-project-eta.vercel.app/";
   };
 
   return (
@@ -115,6 +119,56 @@ const Projects = () => {
               frozen food products for you. Our mission is to provide delicious,
               convenient, and nutritious options that make meal preparation
               easier for you and your family.
+            </p>
+            <span className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-700">
+              React.js
+            </span>
+            <span className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-700">
+              Tailwind CSS
+            </span>
+            <span className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-700">
+              TypeScript
+            </span>
+          </motion.div>
+        </div>
+      </div>
+      <div>
+        <div className="mb-8 flex flex-wrap lg:justify-center">
+          <motion.div
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: -100 }}
+            transition={{ duration: 1 }}
+            className="w-full lg:w-1/4"
+          >
+            <img
+              onClick={handleClick6}
+              src={project6}
+              width={280}
+              height={280}
+              alt="Project 6"
+              className="mb-6 rounded relative cursor-pointer"
+            />
+          </motion.div>
+          <motion.div
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: 100 }}
+            transition={{ duration: 1 }}
+            className="w-full max-w-xl lg:w-3/4"
+          >
+            <a
+              href="https://rakamin-mini-project-eta.vercel.app/"
+              target="_blank"
+              className="mb-2 font-semibold relative hover:text-purple-700"
+            >
+              Kanban Board
+            </a>
+            <p className="mb-4 text-neutral-400">
+              A Kanban board is a visual tool for project management with
+              columns representing stages of work, such as To Do, In Progress,
+              and Done. Each task is represented by a card that moves across
+              columns as progress is made. This board helps teams view the
+              overall work, identify bottlenecks, and improve process
+              efficiency.
             </p>
             <span className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-700">
               React.js
