@@ -67,7 +67,7 @@ const Projects = () => {
             >
               Company Website
             </a>
-            <p className="mb-4 text-neutral-400">
+            <p className="mb-4 text-neutral-400 text-justify">
               Helvete Records, established in 1991, is a premier record label
               and retail destination dedicated to delivering the most intense
               and authentic metal music experience.
@@ -114,7 +114,7 @@ const Projects = () => {
             >
               Frozen Food Website
             </a>
-            <p className="mb-4 text-neutral-400">
+            <p className="mb-4 text-neutral-400 text-justify">
               At TriDi Frozen Food, we prioritize offering the highest quality
               frozen food products for you. Our mission is to provide delicious,
               convenient, and nutritious options that make meal preparation
@@ -162,7 +162,7 @@ const Projects = () => {
             >
               Kanban Board
             </a>
-            <p className="mb-4 text-neutral-400">
+            <p className="mb-4 text-neutral-400 text-justify">
               A Kanban board is a visual tool for project management with
               columns representing stages of work, such as To Do, In Progress,
               and Done. Each task is represented by a card that moves across
@@ -215,7 +215,7 @@ const Projects = () => {
             >
               Drug Store Website
             </a>
-            <p className="mb-4 text-neutral-400">
+            <p className="mb-4 text-neutral-400 text-justify">
               Welcome to Dhavi Farma, where your health and comfort are our top
               priorities. We are a trusted pharmacy offering a wide range of
               medications, health supplements, and personal care products to
@@ -266,7 +266,9 @@ const Projects = () => {
             >
               Calculator App
             </a>
-            <p className="mb-4 text-neutral-400">It's a calculator!</p>
+            <p className="mb-4 text-neutral-400 text-justify">
+              It's a calculator!
+            </p>
             <span className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-700">
               React.js
             </span>
@@ -309,7 +311,7 @@ const Projects = () => {
             >
               Weather App
             </a>
-            <p className="mb-4 text-neutral-400">
+            <p className="mb-4 text-neutral-400 text-justify">
               This application allows you to get up-to-date weather information
               worldwide with a clean and intuitive interface.
             </p>
