@@ -81,6 +81,9 @@ const Projects = () => {
             <span className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-700">
               TypeScript
             </span>
+            <span className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-700">
+              REST API
+            </span>
           </motion.div>
         </div>
       </div>
