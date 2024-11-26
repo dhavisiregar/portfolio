@@ -5,9 +5,9 @@ import { FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiTypescript } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { FaGithub } from "react-icons/fa";
+import { BiLogoPostgresql } from "react-icons/bi";
 import { TbBrandMysql } from "react-icons/tb";
-import { SiPostman } from "react-icons/si";
+import { FaGolang } from "react-icons/fa6";
 import { SiPrisma } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { animate, motion } from "framer-motion";
@@ -96,7 +96,7 @@ const Tech = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaGithub className="text-4xl text-white" />
+          <FaGolang className="text-4xl text-[#00ADD8]" />
         </motion.div>
         <motion.div
           variants={iconWariants(3)}
@@ -136,7 +136,7 @@ const Tech = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiPostman className="text-4xl text-[#EF5B25]" />
+          <BiLogoPostgresql className="text-4xl text-[#0064a5]" />
         </motion.div>
       </motion.div>
     </div>

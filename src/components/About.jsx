@@ -1,4 +1,4 @@
-import foto2 from "../assets/foto-2.jpeg";
+import foto2 from "../assets/foto2.jpeg";
 import { ABOUT_TEXT } from "../constants";
 import { motion } from "framer-motion";
 
