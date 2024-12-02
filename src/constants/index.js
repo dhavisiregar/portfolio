@@ -1,9 +1,19 @@
-export const HERO_CONTENT = `Enthusiastic and dedicated Ex-Full-Stack Web Development student with a keen interest in building innovative digital solutions. Currently honing my skills in both front-end and back-end technologies, including HTML, CSS, JavaScript, Node.js, and more. Eager to leverage my educational background and hands-on experience gained from various projects to contribute to dynamic teams and create impactful web applications. Passionate about learning new technologies and solving complex problems, I am committed to continuous growth and development in the field of web development.`;
+export const HERO_CONTENT = `As a committed Back End Developer, I focus on crafting scalable and efficient server-side applications with Golang and MySQL. I prioritize performance, designing and implementing systems that are reliable, maintainable, and ensure seamless data flow and integration across services.
 
-export const ABOUT_TEXT = `As an Ex-Full Stack Web Development Student at Purwadhika Digital Technology School, I have a proven track record of designing and developing visually appealing and user-friendly web applications. My expertise in HTML, CSS, Typescript, React.js, Next.js, JavaScript, Tailwind CSS, and other modern frameworks enables me to build efficient and scalable front-ends. I have a solid understanding of back-end technologies as well, including MySQL, Node.js, and Express.js. This versatility allows me to collaborate effectively with back-end developers and contribute to the full development lifecycle.
-`;
+I specialize in developing RESTful APIs, fine-tuning database queries, and enhancing system architecture for optimal scalability. My passion lies in writing clean, well-structured code while staying up-to-date with the latest technologies to deliver solutions that align with both technical and business objectives.`;
+
+export const ABOUT_TEXT = `Focused Back End Developer that excel at building efficient, scalable server-side solutions using Golang and MySQL. With an emphasis on performance, I create systems that are durable, easy to maintain, and ensure smooth data handling and integration between services.
+
+My skill set includes designing RESTful APIs, optimizing database performance, and refining system architecture for enhanced scalability. I am passionate about writing clean, structured code and continuously keeping up with the latest technology trends to provide solutions that meet both business goals and technical requirements.`;
 
 export const EXPERIENCES = [
+  {
+    year: "December 2024 - Present",
+    role: "Back End Developer",
+    company: "PT. Cyberindo Mega Persada",
+    description:
+      "As a Back End Developer, I specialize in building scalable and efficient server-side solutions using Golang and MySQL. With a strong focus on performance, I design and implement systems that are both robust and maintainable, ensuring smooth data flow and seamless integration between services.",
+  },
   {
     year: "May 2024 - Sep 2024",
     role: "Full Stack Web Development Student",
