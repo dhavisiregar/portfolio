@@ -1,6 +1,6 @@
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
-import { FaCss3Alt } from "react-icons/fa";
+import { FaPhp } from "react-icons/fa6";
 import { FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiTypescript } from "react-icons/si";
@@ -8,7 +8,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { TbBrandMysql } from "react-icons/tb";
 import { FaGolang } from "react-icons/fa6";
-import { SiPrisma } from "react-icons/si";
+import { FaLaravel } from "react-icons/fa6";
 import { SiExpress } from "react-icons/si";
 import { animate, motion } from "framer-motion";
 
@@ -80,7 +80,7 @@ const Tech = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaCss3Alt className="text-4xl text-blue-500" />
+          <FaPhp className="text-4xl text-[#484C89]" />
         </motion.div>
         <motion.div
           variants={iconWariants(4)}
@@ -128,7 +128,7 @@ const Tech = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiPrisma className="text-4xl" />
+          <FaLaravel className="text-4xl text-[#F05340]" />
         </motion.div>
         <motion.div
           variants={iconWariants(4)}
