@@ -3,7 +3,6 @@ import project1 from "../assets/1.png";
 import project2 from "../assets/2.png";
 import project3 from "../assets/3.png";
 import project4 from "../assets/4.png";
-import project5 from "../assets/5.png";
 import project6 from "../assets/6.png";
 import { motion } from "framer-motion";
 
@@ -18,10 +17,7 @@ const Projects = () => {
     window.location.href = "https://dhavi-farma.vercel.app/";
   };
   const handleClick4 = () => {
-    window.location.href = "https://calculator-cyan-pi.vercel.app/";
-  };
-  const handleClick5 = () => {
-    window.location.href = "https://weather-app-cyan-seven-46.vercel.app/";
+    window.location.href = "https://github.com/dhavisiregar/filament-app";
   };
   const handleClick6 = () => {
     window.location.href = "https://rakamin-mini-project-eta.vercel.app/";
@@ -252,7 +248,7 @@ const Projects = () => {
               src={project4}
               width={280}
               height={280}
-              alt="Project 4"
+              alt="Project 3"
               className="mb-6 rounded relative cursor-pointer"
             />
           </motion.div>
@@ -263,72 +259,25 @@ const Projects = () => {
             className="w-full max-w-xl lg:w-3/4"
           >
             <a
-              href="https://calculator-cyan-pi.vercel.app/"
+              href="https://github.com/dhavisiregar/filament-app"
               target="_blank"
               className="mb-2 z-50 font-semibold relative hover:text-purple-700"
             >
-              Calculator App
+              Filament Content Management System
             </a>
             <p className="mb-4 text-neutral-400 text-justify">
-              It's a calculator!
+              Filament CMS is a content management system built on top of the
+              FilamentPHP framework for Laravel, offering an elegant and
+              customizable solution for managing website content.
             </p>
             <span className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-700">
-              React.js
+              PHP
             </span>
             <span className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-700">
-              Tailwind CSS
+              Laravel
             </span>
             <span className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-700">
-              JavaScript
-            </span>
-          </motion.div>
-        </div>
-      </div>
-      <div>
-        <div className="mb-8 flex flex-wrap lg:justify-center">
-          <motion.div
-            whileInView={{ opacity: 1, x: 0 }}
-            initial={{ opacity: 0, x: -100 }}
-            transition={{ duration: 1 }}
-            className="w-full lg:w-1/4"
-          >
-            <img
-              onClick={handleClick5}
-              src={project5}
-              width={280}
-              height={280}
-              alt="Project 5"
-              className="mb-6 rounded relative cursor-pointer"
-            />
-          </motion.div>
-          <motion.div
-            whileInView={{ opacity: 1, x: 0 }}
-            initial={{ opacity: 0, x: 100 }}
-            transition={{ duration: 1 }}
-            className="w-full max-w-xl lg:w-3/4"
-          >
-            <a
-              href="https://weather-app-cyan-seven-46.vercel.app/"
-              target="_blank"
-              className="mb-2 z-50 font-semibold relative hover:text-purple-700"
-            >
-              Weather App
-            </a>
-            <p className="mb-4 text-neutral-400 text-justify">
-              This application allows you to get up-to-date weather information
-              worldwide with a clean and intuitive interface.
-            </p>
-            <span className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-700">
-              React.js
-            </span>
-            <span className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-700">
-              CSS
-            </span>
-            <span className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-700">
-              JavaScript
-            </span>
-            <span className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-700">
-              REST API
+              Filament
             </span>
           </motion.div>
         </div>

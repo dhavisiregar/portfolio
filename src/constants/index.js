@@ -8,7 +8,7 @@ export const EXPERIENCES = [
     role: "Back End Developer",
     company: "PT. Cyberindo Mega Persada",
     description:
-      "As a Back-End Developer, I specialize in building efficient, scalable, and maintainable server-side applications using PHP, Laravel, and Filament. With a strong focus on creating robust solutions, I excel in developing RESTful APIs, optimizing database performance, and implementing custom dashboards for streamlined user and data management.",
+      "Developing and maintaining RESTful APIs and backend services, designing efficient database structures and optimizing queries, collaborating with Frontend Developers and UI/UX Designers to deliver high-quality applications, and creating and customizing Filament Admin Panels for efficient CMS management.",
   },
   {
     year: "May 2024 - Sep 2024",
