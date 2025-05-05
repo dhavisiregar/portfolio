@@ -1,10 +1,6 @@
-export const HERO_CONTENT = `As a committed Back End Developer, I focus on crafting scalable and efficient server-side applications with Golang and MySQL. I prioritize performance, designing and implementing systems that are reliable, maintainable, and ensure seamless data flow and integration across services.
+export const HERO_CONTENT = `As a Back-End Developer, I specialize in building efficient, scalable, and maintainable server-side applications using PHP, Laravel, and Filament. With a strong focus on creating robust solutions, I excel in developing RESTful APIs, optimizing database performance, and implementing custom dashboards for streamlined user and data management. I thrive on solving complex problems, collaborating with cross-functional teams, and leveraging best practices to deliver high-quality software. Continuously learning and staying updated with industry trends, I am dedicated to crafting clean, reliable, and impactful solutions that drive value and innovation.`;
 
-I specialize in developing RESTful APIs, fine-tuning database queries, and enhancing system architecture for optimal scalability. My passion lies in writing clean, well-structured code while staying up-to-date with the latest technologies to deliver solutions that align with both technical and business objectives.`;
-
-export const ABOUT_TEXT = `Focused Back End Developer that excel at building efficient, scalable server-side solutions using Golang and MySQL. With an emphasis on performance, I create systems that are durable, easy to maintain, and ensure smooth data handling and integration between services.
-
-My skill set includes designing RESTful APIs, optimizing database performance, and refining system architecture for enhanced scalability. I am passionate about writing clean, structured code and continuously keeping up with the latest technology trends to provide solutions that meet both business goals and technical requirements.`;
+export const ABOUT_TEXT = `I am a dedicated Back-End Developer with expertise in PHP, Laravel, and Filament, focused on delivering scalable, efficient, and maintainable server-side solutions. My skills include building RESTful APIs, optimizing database performance, and designing custom dashboards to enhance user and data management workflows. I enjoy tackling complex challenges, collaborating with diverse teams, and adhering to best practices to ensure high-quality software delivery. Passionate about continuous learning and staying at the forefront of industry trends, I strive to create reliable, clean, and impactful solutions that drive success and innovation.`;
 
 export const EXPERIENCES = [
   {
@@ -12,7 +8,7 @@ export const EXPERIENCES = [
     role: "Back End Developer",
     company: "PT. Cyberindo Mega Persada",
     description:
-      "As a Back End Developer, I specialize in building scalable and efficient server-side solutions using Golang and MySQL. With a strong focus on performance, I design and implement systems that are both robust and maintainable, ensuring smooth data flow and seamless integration between services.",
+      "Developing and maintaining RESTful APIs and backend services, designing efficient database structures and optimizing queries, collaborating with Frontend Developers and UI/UX Designers to deliver high-quality applications, and creating and customizing Filament Admin Panels for efficient CMS management.",
   },
   {
     year: "May 2024 - Sep 2024",

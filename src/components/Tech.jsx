@@ -1,13 +1,13 @@
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
-import { FaCss3Alt } from "react-icons/fa";
+import { FaPhp } from "react-icons/fa6";
 import { FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiTypescript } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandMysql } from "react-icons/tb";
 import { FaGolang } from "react-icons/fa6";
-import { SiPrisma } from "react-icons/si";
+import { FaLaravel } from "react-icons/fa6";
 import { SiExpress } from "react-icons/si";
 import { FaLaravel } from "react-icons/fa6";
 import { FaPhp } from "react-icons/fa";
