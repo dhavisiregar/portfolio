@@ -14,30 +14,6 @@ import { SiFilament } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { motion } from "framer-motion";
 
-// Add a simple SVG placeholder for Filament
-const FilamentIcon = (props) => (
-  <svg
-    viewBox="0 0 32 32"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className={props.className}
-    width="1em"
-    height="1em"
-  >
-    <circle cx="16" cy="16" r="16" fill="#68a063" />
-    <text
-      x="16"
-      y="21"
-      textAnchor="middle"
-      fontSize="12"
-      fill="#fff"
-      fontFamily="Arial"
-    >
-      F
-    </text>
-  </svg>
-);
-
 const techStack = {
   frontend: [
     { icon: RiReactjsLine, name: "React", color: "text-cyan-400" },
@@ -54,6 +30,7 @@ const techStack = {
     { icon: SiExpress, name: "Express", color: "text-white" },
     { icon: FaNodeJs, name: "Node.js", color: "text-[#68a063]" },
     { icon: FaPhp, name: "PHP", color: "text-[#777BB4]" },
+    { icon: SiTypescript, name: "TypeScript", color: "text-[#3178c6]" },
   ],
   database: [
     { icon: TbBrandMysql, name: "MySQL", color: "text-[#00758f]" },
