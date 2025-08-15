@@ -31,7 +31,6 @@ const Contact = () => {
     setSubmitStatus({ success: false, error: false, message: "" });
 
     try {
-      // Replace these with your EmailJS credentials
       const serviceId = "service_5hr2447";
       const templateId = "template_6tztbw9";
       const publicKey = "f4pBNONcU5wssorok";

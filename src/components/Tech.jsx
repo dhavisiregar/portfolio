@@ -10,6 +10,7 @@ import { FaGolang } from "react-icons/fa6";
 import { FaCss3Alt } from "react-icons/fa";
 import { SiPrisma } from "react-icons/si";
 import { FaLaravel } from "react-icons/fa6";
+import { SiFilament } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { motion } from "framer-motion";
 
@@ -46,6 +47,7 @@ const techStack = {
     { icon: FaCss3Alt, name: "CSS3", color: "text-blue-500" },
     { icon: RiTailwindCssFill, name: "Tailwind CSS", color: "text-[#06b6d4]" },
     { icon: FaLaravel, name: "Laravel", color: "text-[#ff2d20]" },
+    { icon: SiFilament, name: "Filament", color: "text-white" },
   ],
   backend: [
     { icon: FaGolang, name: "Go", color: "text-[#00ADD8]" },
