@@ -5,6 +5,7 @@ import {
   FaInstagram,
   FaTwitterSquare,
 } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -87,7 +88,7 @@ const Navbar = () => {
     },
     {
       href: "https://x.com/siregardhavi",
-      icon: <FaTwitterSquare />,
+      icon: <FaSquareXTwitter />,
       label: "Twitter",
     },
   ];
