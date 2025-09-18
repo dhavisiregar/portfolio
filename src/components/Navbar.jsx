@@ -87,7 +87,7 @@ const Navbar = () => {
       label: "Instagram",
     },
     {
-      href: "https://x.com/siregardhavi",
+      href: "https://x.com/plagoande",
       icon: <FaSquareXTwitter />,
       label: "Twitter",
     },
