@@ -66,7 +66,7 @@ const Navbar = () => {
     { id: "technologies", label: "Technologies" },
     { id: "experience", label: "Experience" },
     { id: "projects", label: "Projects" },
-    { id: "contact", label: "Contact" },
+    { id: "contact", label: "Contact Me" },
   ];
 
   const socialLinks = [
