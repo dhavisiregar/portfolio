@@ -27,7 +27,7 @@ const techStack = {
   backend: [
     { icon: FaGolang, name: "Go", color: "text-[#00ADD8]" },
     { icon: SiExpress, name: "Express", color: "text-white" },
-    { icon: FaNodeJs, name: "Node.js", color: "text-[#68a063]" },
+    { icon: FaNodeJs, name: "Node.js", color: "text-[#7aa736]" },
     { icon: FaPhp, name: "PHP", color: "text-[#777BB4]" },
     { icon: SiTypescript, name: "TypeScript", color: "text-[#3178c6]" },
   ],
