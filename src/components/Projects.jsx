@@ -38,15 +38,6 @@ const projects = [
   },
   {
     id: 4,
-    title: "Drug Store Website",
-    description:
-      "Welcome to Dhavi Farma, where your health and comfort are our top priorities. We are a trusted pharmacy offering a wide range of medications, health supplements, and personal care products to meet the health needs of you and your family.",
-    image: project3,
-    link: "https://dhavi-farma.vercel.app/",
-    technologies: ["Next.js", "Tailwind CSS", "TypeScript", "REST API"],
-  },
-  {
-    id: 5,
     title: "Filament Admin Dashboard",
     description:
       "Filament is a modern, responsive, and feature-rich admin dashboard template built with Tailwind CSS and React. It provides a clean and professional design that is easy to use and customize.",
@@ -55,7 +46,7 @@ const projects = [
     technologies: ["Filament", "PHP", "Laravel", "MySQL"],
   },
   {
-    id: 6,
+    id: 5,
     title: "Calculator App",
     description:
       "A modern calculator application with a clean interface and smooth animations.",
@@ -64,7 +55,7 @@ const projects = [
     technologies: ["React.js", "Tailwind CSS", "JavaScript"],
   },
   {
-    id: 7,
+    id: 6,
     title: "Weather App",
     description:
       "This application allows you to get up-to-date weather information worldwide with a clean and intuitive interface.",
