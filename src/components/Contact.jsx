@@ -96,44 +96,6 @@ const Contact = () => {
               {CONTACT.email}
             </a>
           </div>
-
-          <div className="space-y-4">
-            <h3 className="text-2xl font-semibold">Social Media</h3>
-            <div className="flex space-x-4">
-              <a
-                href="https://github.com/dhavisiregar"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-neutral-400 hover:text-white transition-colors z-10"
-              >
-                <FaGithub size={24} />
-              </a>
-              <a
-                href="https://linkedin.com/in/sultan-muhammad-dhavi"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-neutral-400 hover:text-white transition-colors z-10"
-              >
-                <FaLinkedin size={24} />
-              </a>
-              <a
-                href="https://twitter.com/plagoande"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-neutral-400 hover:text-white transition-colors z-10"
-              >
-                <FaTwitter size={24} />
-              </a>
-              <a
-                href="https://www.instagram.com/dhavisiregar/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-neutral-400 hover:text-white transition-colors z-10"
-              >
-                <FaInstagram size={24} />
-              </a>
-            </div>
-          </div>
         </motion.div>
 
         {/* Contact Form */}
