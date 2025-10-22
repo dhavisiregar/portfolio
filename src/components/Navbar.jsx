@@ -5,6 +5,7 @@ import {
   FaInstagram,
   FaTwitterSquare,
 } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -66,7 +67,7 @@ const Navbar = () => {
     { id: "technologies", label: "Technologies" },
     { id: "experience", label: "Experience" },
     { id: "projects", label: "Projects" },
-    { id: "contact", label: "Contact" },
+    { id: "contact", label: "Contact Me" },
   ];
 
   const socialLinks = [
@@ -86,8 +87,8 @@ const Navbar = () => {
       label: "Instagram",
     },
     {
-      href: "https://x.com/siregardhavi",
-      icon: <FaTwitterSquare />,
+      href: "https://x.com/plagoande",
+      icon: <FaSquareXTwitter />,
       label: "Twitter",
     },
   ];

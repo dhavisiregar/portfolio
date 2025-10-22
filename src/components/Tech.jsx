@@ -1,5 +1,5 @@
 import { RiReactjsLine } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
+import { SiNextdotjs } from "react-icons/si";
 import { FaPhp } from "react-icons/fa6";
 import { FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -9,32 +9,32 @@ import { TbBrandMysql } from "react-icons/tb";
 import { FaGolang } from "react-icons/fa6";
 import { FaCss3Alt } from "react-icons/fa";
 import { SiPrisma } from "react-icons/si";
-import { FaLaravel } from "react-icons/fa6";
 import { SiFilament } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { motion } from "framer-motion";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 const techStack = {
   frontend: [
-    { icon: RiReactjsLine, name: "React", color: "text-cyan-400" },
-    { icon: TbBrandNextjs, name: "Next.js", color: "text-white" },
+    { icon: RiReactjsLine, name: "React", color: "text-[#60dcfc]" },
+    { icon: SiNextdotjs, name: "Next.js", color: "text-white" },
     { icon: IoLogoJavascript, name: "JavaScript", color: "text-[#F0DB4F]" },
     { icon: SiTypescript, name: "TypeScript", color: "text-[#3178c6]" },
-    { icon: FaCss3Alt, name: "CSS3", color: "text-blue-500" },
+    { icon: FaCss3Alt, name: "CSS3", color: "text-[#214ce4]" },
     { icon: RiTailwindCssFill, name: "Tailwind CSS", color: "text-[#06b6d4]" },
-    { icon: FaLaravel, name: "Laravel", color: "text-[#ff2d20]" },
     { icon: SiFilament, name: "Filament", color: "text-white" },
   ],
   backend: [
     { icon: FaGolang, name: "Go", color: "text-[#00ADD8]" },
     { icon: SiExpress, name: "Express", color: "text-white" },
-    { icon: FaNodeJs, name: "Node.js", color: "text-[#68a063]" },
+    { icon: FaNodeJs, name: "Node.js", color: "text-[#7aa736]" },
     { icon: FaPhp, name: "PHP", color: "text-[#777BB4]" },
     { icon: SiTypescript, name: "TypeScript", color: "text-[#3178c6]" },
   ],
   database: [
-    { icon: TbBrandMysql, name: "MySQL", color: "text-[#00758f]" },
-    { icon: SiPrisma, name: "Prisma", color: "text-white" },
+    { icon: TbBrandMysql, name: "MySQL", color: "text-[#00608c]" },
+    { icon: SiPrisma, name: "Prisma", color: "text-[#153a51]" },
+    { icon: BiLogoPostgresql, name: "PostgreSQL", color: "text-[#3a6c95]" },
   ],
 };
 
