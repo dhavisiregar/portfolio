@@ -1,6 +1,13 @@
-export const HERO_CONTENT = `As a Back-End Developer, I specialize in building efficient, scalable, and maintainable server-side applications using PHP, Laravel, and Filament. With a strong focus on creating robust solutions, I excel in developing RESTful APIs, optimizing database performance, and implementing custom dashboards for streamlined user and data management. I thrive on solving complex problems, collaborating with cross-functional teams, and leveraging best practices to deliver high-quality software. Continuously learning and staying updated with industry trends, I am dedicated to crafting clean, reliable, and impactful solutions that drive value and innovation.`;
+export const HERO_CONTENT = `I am a Backend Developer specializing in building scalable, secure, and high-performance server-side applications using PHP, Laravel, and FilamentPHP. I have hands-on experience developing RESTful APIs, optimizing complex database queries, and designing efficient backend architectures to support high data volumes and low-latency systems.
 
-export const ABOUT_TEXT = `I am a dedicated Back-End Developer with expertise in PHP, Laravel, and Filament, focused on delivering scalable, efficient, and maintainable server-side solutions. My skills include building RESTful APIs, optimizing database performance, and designing custom dashboards to enhance user and data management workflows. I enjoy tackling complex challenges, collaborating with diverse teams, and adhering to best practices to ensure high-quality software delivery. Passionate about continuous learning and staying at the forefront of industry trends, I strive to create reliable, clean, and impactful solutions that drive success and innovation.`;
+I actively customize and extend FilamentPHP Admin Panels to improve CMS usability and streamline internal workflows. I also collaborate closely with Frontend and UI/UX teams to ensure seamless system integration and alignment with business goals.In addition, I have experience supporting enterprise-level systems, including CRM platforms built with React and Go, as well as maintaining and enhancing CMS platforms to ensure reliability, scalability, and continuous improvement. I am passionate about writing clean, maintainable code and continuously improving system performance and architecture.`;
+
+export const ABOUT_TEXT = `I am Backend Developer with strong experience in building, maintaining, and optimizing scalable and secure
+server- side applications using PHP and Laravel. Proven expertise in developing RESTful APIs,
+designing efficient database architectures, and improving query performance for high-volume systems.
+Experienced in customizing FilamentPHP Admin Panels and supporting enterprise- level platforms,
+including CRM systems and CMS solutions. Adept at collaborating with cross- functional teams to
+deliver reliable, high-performance backend solutions aligned with business objectives`;
 
 export const EXPERIENCES = [
   {
@@ -8,13 +15,18 @@ export const EXPERIENCES = [
     role: "Back End Developer",
     company: "PT. Cyberindo Mega Persada",
     description:
-      "Developing and maintaining RESTful APIs and backend services, designing efficient database structures and optimizing queries, collaborating with Frontend Developers and UI/UX Designers to deliver high-quality applications, and creating and customizing Filament Admin Panels for efficient CMS management.",
+      "In supporting enterprise systems and internal business platforms, I was responsible for ensuring backend performance, scalability, and reliability across multiple applications. I developed and optimized RESTful APIs and backend services, designed efficient database structures, improved complex query performance, and customized FilamentPHP Admin Panels to enhance CMS usability and streamline internal workflows. I collaborated closely with Front End Developers and UI/ UX Designers to deliver well-integrated solutions aligned with business requirements, while also supporting and enhancing the Cloudia CRM system built with React and Go, as well as maintaining CMS platforms for enterprise clients such as SPPI LSP. These contributions improved system stability, optimized response times, and enabled smoother feature enhancements and operational efficiency.",
   },
   {
     year: "May 2024 - Sep 2024",
-    role: "Full Stack Web Development Student",
+    role: "Full Stack Web Development Bootcamp Student",
     company: "Purwadhika Digital Technology School",
-    description: `My expertise in HTML, CSS, Typescript, React.js, Next.js, JavaScript, Tailwind CSS, and other modern frameworks enables me to build efficient and scalable front-ends. I have a solid understanding of back-end technologies as well, including MySQL, Node.js, and Express.js.`,
+    description: `I
+learn to build a complete web applications from scratch. I developed front-end skills using HTML, CSS,
+JavaScript, TypeScript, React.js, Next.js, and Tailwind CSS, while on the back end, I worked with
+Node.js, Express.js, MySQL, and Prisma to create and test APIs. I also used Git and GitHub for version
+control and collaboration. By the end of the program, I had hands-on experience with the full development
+lifecycle and was confident in building, testing, and deploying full-stack applications.`,
   },
   {
     year: "Aug 2023 - Nov 2023",
