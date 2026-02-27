@@ -2,7 +2,7 @@ export const HERO_CONTENT = `I am a Backend Developer specializing in building s
 
 I actively customize and extend FilamentPHP Admin Panels to improve CMS usability and streamline internal workflows. I also collaborate closely with Frontend and UI/UX teams to ensure seamless system integration and alignment with business goals.In addition, I have experience supporting enterprise-level systems, including CRM platforms built with React and Go, as well as maintaining and enhancing CMS platforms to ensure reliability, scalability, and continuous improvement. I am passionate about writing clean, maintainable code and continuously improving system performance and architecture.`;
 
-export const ABOUT_TEXT = `I am Backend Developer with strong experience in building, maintaining, and optimizing scalable and secure
+export const ABOUT_TEXT = `Backend Developer with strong experience in building, maintaining, and optimizing scalable and secure
 server- side applications using PHP and Laravel. Proven expertise in developing RESTful APIs,
 designing efficient database architectures, and improving query performance for high-volume systems.
 Experienced in customizing FilamentPHP Admin Panels and supporting enterprise- level platforms,
