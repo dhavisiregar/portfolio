@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import project1 from "../assets/1.png";
 import project2 from "../assets/2.png";
-import project3 from "../assets/3.png";
+import project3 from "../assets/8.png";
 import project4 from "../assets/4.png";
 import project6 from "../assets/6.png";
 import project5 from "../assets/5.png";
@@ -20,15 +20,24 @@ const projects = [
   },
   {
     id: 2,
+    title: "Masak Apa",
+    description:
+      "A web app that turns the ingredients you have into delicious meals. Its mission is to simplify cooking and reduce food waste by providing smart recipe suggestions and easy-to-follow cooking instructions for you and your family.",
+    image: project3,
+    link: "https://masak-apa-fe.vercel.app//",
+    technologies: ["JavaScript", "React.js", "Golang", "MySQL", "REST API"],
+  },
+  {
+    id: 3,
     title: "Frozen Food Website",
     description:
-      "At TriDi Frozen Food, we prioritize offering the highest quality frozen food products for you. Our mission is to provide delicious, convenient, and nutritious options that make meal preparation easier for you and your family.",
+      "At TriDi Frozen Food, we prioritize offering the highest quality frozen food products for you. The mission is to provide delicious, convenient, and nutritious options that make meal preparation easier for you and your family.",
     image: project2,
     link: "https://tridi-frozen-food.vercel.app/",
     technologies: ["React.js", "Tailwind CSS", "TypeScript"],
   },
   {
-    id: 3,
+    id: 4,
     title: "Kanban Board",
     description:
       "A Kanban board is a visual tool for project management with columns representing stages of work, such as To Do, In Progress, and Done. Each task is represented by a card that moves across columns as progress is made. This board helps teams view the overall work, identify bottlenecks, and improve process efficiency.",
@@ -37,7 +46,7 @@ const projects = [
     technologies: ["React.js", "Tailwind CSS", "TypeScript", "DND-Kit"],
   },
   {
-    id: 4,
+    id: 5,
     title: "Filament Admin Dashboard",
     description:
       "Filament is a modern, responsive, and feature-rich admin dashboard template built with Tailwind CSS and React. It provides a clean and professional design that is easy to use and customize.",
@@ -46,7 +55,7 @@ const projects = [
     technologies: ["Filament", "PHP", "Laravel", "MySQL"],
   },
   {
-    id: 5,
+    id: 6,
     title: "Calculator App",
     description:
       "A modern calculator application with a clean interface and smooth animations.",
@@ -55,7 +64,7 @@ const projects = [
     technologies: ["React.js", "Tailwind CSS", "JavaScript"],
   },
   {
-    id: 6,
+    id: 7,
     title: "Weather App",
     description:
       "This application allows you to get up-to-date weather information worldwide with a clean and intuitive interface.",
