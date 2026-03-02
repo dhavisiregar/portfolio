@@ -16,7 +16,7 @@ const projects = [
       "Helvete Records, established in 1991, is a premier record label and retail destination dedicated to delivering the most intense and authentic metal music experience.",
     image: project1,
     link: "https://cc2-jcwd2804-dhavi.vercel.app/",
-    technologies: ["Next.js", "Tailwind CSS", "TypeScript", "REST API"],
+    technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const projects = [
       "A web app that turns the ingredients you have into delicious meals. Its mission is to simplify cooking and reduce food waste by providing smart recipe suggestions and easy-to-follow cooking instructions for you and your family.",
     image: project3,
     link: "https://masak-apa-fe.vercel.app//",
-    technologies: ["JavaScript", "React.js", "Golang", "MySQL", "REST API"],
+    technologies: ["JavaScript", "React.js", "Golang", "MySQL", "Docker"],
   },
   {
     id: 3,
