@@ -20,11 +20,11 @@ const projects = [
   },
   {
     id: 2,
-    title: "Masak Apa",
+    title: "Masak Apa?",
     description:
       "A web app that turns the ingredients you have into delicious meals. Its mission is to simplify cooking and reduce food waste by providing smart recipe suggestions and easy-to-follow cooking instructions for you and your family.",
     image: project3,
-    link: "https://masak-apa-fe.vercel.app//",
+    link: "https://maumasak.vercel.app/",
     technologies: ["JavaScript", "React.js", "Golang", "MySQL", "Docker"],
   },
   {
