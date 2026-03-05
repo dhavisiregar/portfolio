@@ -10,8 +10,11 @@ const App = () => {
   return (
     <div className="overflow-x-hidden bg-gradient-to-r from-black via-slate-900 to-black text-neutral-300 antialiased">
       <div className="fixed top-0 -z-0 h-full w-full"></div>
+
+      {/* Navbar is outside container so it spans full width */}
+      <Navbar />
+
       <div className="container mx-auto px-8">
-        <Navbar />
         <Hero />
         <div id="about">
           <About />

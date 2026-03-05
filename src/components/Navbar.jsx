@@ -1,10 +1,5 @@
 import logo from "../assets/logo.png";
-import {
-  FaLinkedin,
-  FaGithub,
-  FaInstagram,
-  FaTwitterSquare,
-} from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -13,6 +8,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
   const [scrollProgress, setScrollProgress] = useState(0);
+  const [showScrollTop, setShowScrollTop] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -47,6 +43,9 @@ const Navbar = () => {
       document.documentElement.scrollHeight - window.innerHeight;
     const progress = (window.scrollY / totalHeight) * 100;
     setScrollProgress(progress);
+
+    // Show scroll-to-top button after scrolling 300px
+    setShowScrollTop(window.scrollY > 300);
   };
 
   const scrollToSection = (sectionId) => {
@@ -55,6 +54,10 @@ const Navbar = () => {
       element.scrollIntoView({ behavior: "smooth" });
       setIsOpen(false);
     }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   useEffect(() => {
@@ -94,93 +97,116 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-sm mb-20 flex items-center justify-between py-6">
-      {/* Scroll Progress Bar */}
-      <div
-        className="absolute top-0 left-0 h-1 bg-purple-700 transition-all duration-300"
-        style={{ width: `${scrollProgress}%` }}
-      />
+    <>
+      {/* Fixed full-width navbar */}
+      <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm bg-black/10 flex items-center justify-between px-8">
+        {/* Scroll Progress Bar */}
+        <div
+          className="absolute top-0 left-0 h-1 bg-purple-700 transition-all duration-300"
+          style={{ width: `${scrollProgress}%` }}
+        />
 
-      <div className="flex flex-shrink-0 items-center">
-        <img src={logo} alt="logo" className="w-14 mx-2" />
-      </div>
+        <div className="flex flex-shrink-0 items-center">
+          <img src={logo} alt="logo" className="w-14 mx-2" />
+        </div>
 
-      {/* Desktop Navigation */}
-      <div className="hidden md:flex">
-        <ul className="flex z-10 items-center gap-8 text-sm relative">
-          {navLinks.map((link) => (
-            <li key={link.id}>
-              <button
-                onClick={() => scrollToSection(link.id)}
-                className={`hover:text-purple-700 transition-colors duration-300 ${
-                  activeSection === link.id ? "text-purple-700" : ""
-                }`}
-                aria-label={`Scroll to ${link.label}`}
-              >
-                {link.label}
-              </button>
-            </li>
-          ))}
-        </ul>
-      </div>
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex">
+          <ul className="flex z-10 items-center gap-8 text-sm relative">
+            {navLinks.map((link) => (
+              <li key={link.id}>
+                <button
+                  onClick={() => scrollToSection(link.id)}
+                  className={`hover:text-purple-700 transition-colors duration-300 ${
+                    activeSection === link.id ? "text-purple-700" : ""
+                  }`}
+                  aria-label={`Scroll to ${link.label}`}
+                >
+                  {link.label}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-      {/* Mobile Menu Button */}
-      <div className="md:hidden flex items-center z-10 ml-auto">
-        <button
-          onClick={toggleMenu}
-          className="text-2xl focus:outline-none p-2"
-          aria-label={isOpen ? "Close menu" : "Open menu"}
-          aria-expanded={isOpen}
-        >
-          {isOpen ? "✖️" : "☰"}
-        </button>
-      </div>
-
-      {/* Mobile Menu */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.2 }}
-            className="absolute top-16 right-0 w-full bg-black/95 shadow-lg md:hidden"
+        {/* Mobile Menu Button */}
+        <div className="md:hidden flex items-center z-10 ml-auto">
+          <button
+            onClick={toggleMenu}
+            className="text-2xl focus:outline-none p-2"
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isOpen}
           >
-            <ul className="flex flex-col items-center gap-4 py-4">
-              {navLinks.map((link) => (
-                <li key={link.id}>
-                  <button
-                    onClick={() => scrollToSection(link.id)}
-                    className={`hover:text-purple-700 transition-colors duration-300 ${
-                      activeSection === link.id ? "text-purple-700" : ""
-                    }`}
-                    aria-label={`Scroll to ${link.label}`}
-                  >
-                    {link.label}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
+            {isOpen ? "✖️" : "☰"}
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.2 }}
+              className="absolute top-16 right-0 w-full bg-black/95 shadow-lg md:hidden"
+            >
+              <ul className="flex flex-col items-center gap-4 py-4">
+                {navLinks.map((link) => (
+                  <li key={link.id}>
+                    <button
+                      onClick={() => scrollToSection(link.id)}
+                      className={`hover:text-purple-700 transition-colors duration-300 ${
+                        activeSection === link.id ? "text-purple-700" : ""
+                      }`}
+                      aria-label={`Scroll to ${link.label}`}
+                    >
+                      {link.label}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        {/* Social Links */}
+        <div className="m-8 flex items-center justify-center gap-4 text-2xl">
+          {socialLinks.map((social) => (
+            <a
+              key={social.label}
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="z-10 hover:text-purple-700 transition-colors duration-300"
+              aria-label={`Visit my ${social.label} profile`}
+            >
+              {social.icon}
+            </a>
+          ))}
+        </div>
+      </nav>
+
+      {/* Spacer so content doesn't hide under fixed navbar */}
+      <div className="h-24" />
+
+      {/* Scroll to Top Button */}
+      <AnimatePresence>
+        {showScrollTop && (
+          <motion.button
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.5 }}
+            transition={{ duration: 0.2 }}
+            onClick={scrollToTop}
+            className="fixed bottom-8 right-8 z-50 w-12 h-12 bg-purple-700 hover:bg-purple-600 text-white rounded-full shadow-lg flex items-center justify-center text-xl transition-colors duration-300"
+            aria-label="Scroll to top"
+          >
+            ↑
+          </motion.button>
         )}
       </AnimatePresence>
-
-      {/* Social Links */}
-      <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-        {socialLinks.map((social) => (
-          <a
-            key={social.label}
-            href={social.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="z-10 hover:text-purple-700 transition-colors duration-300"
-            aria-label={`Visit my ${social.label} profile`}
-          >
-            {social.icon}
-          </a>
-        ))}
-      </div>
-    </nav>
+    </>
   );
 };
 

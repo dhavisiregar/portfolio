@@ -18,14 +18,7 @@ const projects = [
       "A web app that turns the ingredients you have into delicious meals. Its mission is to simplify cooking and reduce food waste by providing smart recipe suggestions and easy-to-follow cooking instructions for you and your family.",
     image: project3,
     link: "https://maumasak.vercel.app/",
-    technologies: [
-      "JavaScript",
-      "React.js",
-      "Golang",
-      "MySQL",
-      "Docker",
-      "GROQ API",
-    ],
+    technologies: ["React.js", "Golang", "MySQL", "Docker", "GROQ API"],
   },
   {
     id: 2,
@@ -34,7 +27,7 @@ const projects = [
       "A smart bill-splitting web app that uses AI vision to scan receipts and automatically extract items, tax, and service charge — then splits the total per person and shares the breakdown via WhatsApp.",
     image: project8,
     link: "https://split-bill-snowy.vercel.app/",
-    technologies: ["JavaScript", "React.js", "GROQ API", "Tailwind"],
+    technologies: ["React.js", "GROQ API", "Tailwind"],
   },
   {
     id: 3,
@@ -43,7 +36,7 @@ const projects = [
       "Ever wondered how many calories are in that plate of nasi goreng? Just snap a photo and find out. Calorie Scanner uses AI to instantly estimate the nutrition info of any food — no manual logging, no guessing.",
     image: project9,
     link: "https://caloriescanner.vercel.app/",
-    technologies: ["JavaScript", "React.js", "GROQ API", "Tailwind"],
+    technologies: ["React.js", "GROQ API", "Tailwind"],
   },
   {
     id: 4,
@@ -52,7 +45,7 @@ const projects = [
       "Helvete Records, established in 1991, is a premier record label and retail destination dedicated to delivering the most intense and authentic metal music experience.",
     image: project1,
     link: "https://cc2-jcwd2804-dhavi.vercel.app/",
-    technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
+    technologies: ["Next.js", "Tailwind", "TypeScript"],
   },
   {
     id: 5,
@@ -61,7 +54,7 @@ const projects = [
       "A Kanban board is a visual tool for project management with columns representing stages of work, such as To Do, In Progress, and Done. Each task is represented by a card that moves across columns as progress is made. This board helps teams view the overall work, identify bottlenecks, and improve process efficiency.",
     image: project6,
     link: "https://rakamin-mini-project-eta.vercel.app/",
-    technologies: ["React.js", "Tailwind CSS", "TypeScript", "DND-Kit"],
+    technologies: ["React.js", "Tailwind", "TypeScript", "DND-Kit"],
   },
   {
     id: 6,
@@ -70,7 +63,7 @@ const projects = [
       "Filament is a modern, responsive, and feature-rich admin dashboard template built with Tailwind CSS and React. It provides a clean and professional design that is easy to use and customize.",
     image: project7,
     link: "https://github.com/dhavisiregar/filament-app",
-    technologies: ["Filament", "PHP", "Laravel", "MySQL"],
+    technologies: ["FilamentPHP", "PHP", "Laravel", "MySQL"],
   },
   {
     id: 7,
@@ -79,7 +72,7 @@ const projects = [
       "A modern calculator application with a clean interface and smooth animations.",
     image: project4,
     link: "https://calculator-cyan-pi.vercel.app/",
-    technologies: ["React.js", "Tailwind CSS", "JavaScript"],
+    technologies: ["React.js", "Tailwind", "JavaScript"],
   },
   {
     id: 8,
