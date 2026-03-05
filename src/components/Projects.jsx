@@ -8,19 +8,11 @@ import project6 from "../assets/6.png";
 import project5 from "../assets/5.png";
 import project7 from "../assets/7.png";
 import project8 from "../assets/9.png";
+import project9 from "../assets/10.png";
 
 const projects = [
   {
     id: 1,
-    title: "Company Website",
-    description:
-      "Helvete Records, established in 1991, is a premier record label and retail destination dedicated to delivering the most intense and authentic metal music experience.",
-    image: project1,
-    link: "https://cc2-jcwd2804-dhavi.vercel.app/",
-    technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
-  },
-  {
-    id: 2,
     title: "Masak Apa?",
     description:
       "A web app that turns the ingredients you have into delicious meals. Its mission is to simplify cooking and reduce food waste by providing smart recipe suggestions and easy-to-follow cooking instructions for you and your family.",
@@ -36,7 +28,7 @@ const projects = [
     ],
   },
   {
-    id: 3,
+    id: 2,
     title: "Split It",
     description:
       "A smart bill-splitting web app that uses AI vision to scan receipts and automatically extract items, tax, and service charge — then splits the total per person and shares the breakdown via WhatsApp.",
@@ -45,7 +37,25 @@ const projects = [
     technologies: ["JavaScript", "React.js", "GROQ API", "Tailwind"],
   },
   {
+    id: 3,
+    title: "Calorie Scanner",
+    description:
+      "Ever wondered how many calories are in that plate of nasi goreng? Just snap a photo and find out. Calorie Scanner uses AI to instantly estimate the nutrition info of any food — no manual logging, no guessing.",
+    image: project9,
+    link: "https://caloriescanner.vercel.app/",
+    technologies: ["JavaScript", "React.js", "GROQ API", "Tailwind"],
+  },
+  {
     id: 4,
+    title: "Company Website",
+    description:
+      "Helvete Records, established in 1991, is a premier record label and retail destination dedicated to delivering the most intense and authentic metal music experience.",
+    image: project1,
+    link: "https://cc2-jcwd2804-dhavi.vercel.app/",
+    technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
+  },
+  {
+    id: 5,
     title: "Kanban Board",
     description:
       "A Kanban board is a visual tool for project management with columns representing stages of work, such as To Do, In Progress, and Done. Each task is represented by a card that moves across columns as progress is made. This board helps teams view the overall work, identify bottlenecks, and improve process efficiency.",
@@ -54,7 +64,7 @@ const projects = [
     technologies: ["React.js", "Tailwind CSS", "TypeScript", "DND-Kit"],
   },
   {
-    id: 5,
+    id: 6,
     title: "Filament Admin Dashboard",
     description:
       "Filament is a modern, responsive, and feature-rich admin dashboard template built with Tailwind CSS and React. It provides a clean and professional design that is easy to use and customize.",
@@ -63,7 +73,7 @@ const projects = [
     technologies: ["Filament", "PHP", "Laravel", "MySQL"],
   },
   {
-    id: 6,
+    id: 7,
     title: "Calculator App",
     description:
       "A modern calculator application with a clean interface and smooth animations.",
@@ -72,7 +82,7 @@ const projects = [
     technologies: ["React.js", "Tailwind CSS", "JavaScript"],
   },
   {
-    id: 7,
+    id: 8,
     title: "Weather App",
     description:
       "This application allows you to get up-to-date weather information worldwide with a clean and intuitive interface.",
