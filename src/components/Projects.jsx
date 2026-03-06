@@ -13,12 +13,12 @@ import project9 from "../assets/10.png";
 const projects = [
   {
     id: 1,
-    title: "Masak Apa?",
+    title: "Redline Gokart Booking Web App",
     description:
-      "A web app that turns the ingredients you have into delicious meals. Its mission is to simplify cooking and reduce food waste by providing smart recipe suggestions and easy-to-follow cooking instructions for you and your family.",
+      "Redline Gokart was running on manual WhatsApp bookings — so I built a full online booking system from scratch. The app features real-time slot scheduling, instant WhatsApp notifications, and weekday/weekend dynamic pricing.",
     image: project3,
-    link: "https://maumasak.vercel.app/",
-    technologies: ["React.js", "Golang", "MySQL", "Docker", "GROQ API"],
+    link: "https://redlinegokart.vercel.app/",
+    technologies: ["React.js", "Golang", "MySQL", "Docker", "Fonnte API"],
   },
   {
     id: 2,
