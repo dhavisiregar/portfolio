@@ -31,6 +31,15 @@ const projects = [
   },
   {
     id: 3,
+    title: "Masak Apa?",
+    description:
+      "Masak Apa? lets you input ingredients you have at home and instantly finds matching Indonesian recipes — with match percentage, missing ingredients, and step-by-step cooking instructions.",
+    image: project2,
+    link: "https://maumasak.vercel.app/",
+    technologies: ["React.js", "Golang", "GROQ API", "MySQL"],
+  },
+  {
+    id: 3,
     title: "Calorie Scanner",
     description:
       "Ever wondered how many calories are in that plate of nasi goreng? Just snap a photo and find out. Calorie Scanner uses AI to instantly estimate the nutrition info of any food — no manual logging, no guessing.",
