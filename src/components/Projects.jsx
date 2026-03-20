@@ -9,10 +9,20 @@ import project5 from "../assets/5.png";
 import project7 from "../assets/7.png";
 import project8 from "../assets/9.png";
 import project9 from "../assets/10.png";
+import project10 from "../assets/11.png";
 
 const projects = [
   {
     id: 1,
+    title: "WA Invoice — Invoice & Pembayaran untuk UMKM",
+    description:
+      "Built WA Invoice to solve manual bookkeeping for Indonesian small businesses — create professional invoices in seconds, share directly via WhatsApp, and track payments in real-time. Deployed to production with a freemium monetization model.",
+    image: project10,
+    link: "https://wa-invoice.vercel.app/",
+    technologies: ["Next.js", "Golang", "PostgreSQL"],
+  },
+  {
+    id: 2,
     title: "Redline Gokart Booking Web App",
     description:
       "Redline Gokart was running on manual WhatsApp bookings — so I built a full online booking system from scratch. The app features real-time slot scheduling, instant WhatsApp notifications, and weekday/weekend dynamic pricing.",
@@ -21,7 +31,7 @@ const projects = [
     technologies: ["React.js", "Golang", "MySQL", "Docker", "Fonnte API"],
   },
   {
-    id: 2,
+    id: 3,
     title: "Split It",
     description:
       "A smart bill-splitting web app that uses AI vision to scan receipts and automatically extract items, tax, and service charge — then splits the total per person and shares the breakdown via WhatsApp.",
@@ -30,7 +40,7 @@ const projects = [
     technologies: ["React.js", "GROQ API", "Tailwind"],
   },
   {
-    id: 3,
+    id: 4,
     title: "Masak Apa?",
     description:
       "Masak Apa? lets you input ingredients you have at home and instantly finds matching Indonesian recipes — with match percentage, missing ingredients, and step-by-step cooking instructions.",
@@ -39,7 +49,7 @@ const projects = [
     technologies: ["React.js", "Golang", "GROQ API", "MySQL"],
   },
   {
-    id: 3,
+    id: 5,
     title: "Calorie Scanner",
     description:
       "Ever wondered how many calories are in that plate of nasi goreng? Just snap a photo and find out. Calorie Scanner uses AI to instantly estimate the nutrition info of any food — no manual logging, no guessing.",
@@ -48,7 +58,7 @@ const projects = [
     technologies: ["React.js", "GROQ API", "Tailwind"],
   },
   {
-    id: 4,
+    id: 6,
     title: "Company Website",
     description:
       "Helvete Records, established in 1991, is a premier record label and retail destination dedicated to delivering the most intense and authentic metal music experience.",
@@ -57,7 +67,7 @@ const projects = [
     technologies: ["Next.js", "Tailwind", "TypeScript"],
   },
   {
-    id: 5,
+    id: 7,
     title: "Kanban Board",
     description:
       "A Kanban board is a visual tool for project management with columns representing stages of work, such as To Do, In Progress, and Done. Each task is represented by a card that moves across columns as progress is made. This board helps teams view the overall work, identify bottlenecks, and improve process efficiency.",
@@ -66,7 +76,7 @@ const projects = [
     technologies: ["React.js", "Tailwind", "TypeScript", "DND-Kit"],
   },
   {
-    id: 6,
+    id: 8,
     title: "Filament Admin Dashboard",
     description:
       "Filament is a modern, responsive, and feature-rich admin dashboard template built with Tailwind CSS and React. It provides a clean and professional design that is easy to use and customize.",
@@ -75,7 +85,7 @@ const projects = [
     technologies: ["FilamentPHP", "PHP", "Laravel", "MySQL"],
   },
   {
-    id: 7,
+    id: 9,
     title: "Calculator App",
     description:
       "A modern calculator application with a clean interface and smooth animations.",
@@ -84,7 +94,7 @@ const projects = [
     technologies: ["React.js", "Tailwind", "JavaScript"],
   },
   {
-    id: 8,
+    id: 10,
     title: "Weather App",
     description:
       "This application allows you to get up-to-date weather information worldwide with a clean and intuitive interface.",
