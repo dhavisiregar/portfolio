@@ -37,7 +37,7 @@ const projects = [
       "A smart bill-splitting web app that uses AI vision to scan receipts and automatically extract items, tax, and service charge — then splits the total per person and shares the breakdown via WhatsApp.",
     image: project8,
     link: "https://split-bill-snowy.vercel.app/",
-    technologies: ["React.js", "GROQ API", "Tailwind"],
+    technologies: ["React.js", "GROQ AI", "Tailwind"],
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const projects = [
       "Masak Apa? lets you input ingredients you have at home and instantly finds matching Indonesian recipes — with match percentage, missing ingredients, and step-by-step cooking instructions.",
     image: project2,
     link: "https://maumasak.vercel.app/",
-    technologies: ["React.js", "Golang", "GROQ API", "MySQL"],
+    technologies: ["React.js", "Golang", "GROQ AI", "MySQL"],
   },
   {
     id: 5,
@@ -55,7 +55,7 @@ const projects = [
       "Ever wondered how many calories are in that plate of nasi goreng? Just snap a photo and find out. Calorie Scanner uses AI to instantly estimate the nutrition info of any food — no manual logging, no guessing.",
     image: project9,
     link: "https://caloriescanner.vercel.app/",
-    technologies: ["React.js", "GROQ API", "Tailwind"],
+    technologies: ["React.js", "GROQ AI", "Tailwind"],
   },
   {
     id: 6,
