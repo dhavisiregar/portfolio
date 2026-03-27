@@ -20,7 +20,6 @@ const techStack = {
     { icon: SiNextdotjs, name: "Next.js", color: "text-white" },
     { icon: IoLogoJavascript, name: "JavaScript", color: "text-[#F0DB4F]" },
     { icon: SiTypescript, name: "TypeScript", color: "text-[#3178c6]" },
-    { icon: FaCss3Alt, name: "CSS3", color: "text-[#214ce4]" },
     { icon: RiTailwindCssFill, name: "Tailwind CSS", color: "text-[#06b6d4]" },
     { icon: SiFilament, name: "Filament", color: "text-white" },
   ],
