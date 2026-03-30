@@ -13,7 +13,7 @@ export const EXPERIENCES = [
     role: "Back End Developer",
     company: "PT. Cyberindo Mega Persada",
     description:
-      "In supporting enterprise systems and internal business platforms, I was responsible for ensuring backend performance, scalability, and reliability across multiple applications. I developed and optimized RESTful APIs and backend services, designed efficient database structures, improved complex query performance, and customized FilamentPHP Admin Panels to enhance CMS usability and streamline internal workflows. I collaborated closely with Front End Developers and UI/ UX Designers to deliver well-integrated solutions aligned with business requirements, while also supporting and enhancing the Cloudia CRM system built with React and Go, as well as maintaining CMS platforms for enterprise clients such as SPPI LSP. These contributions improved system stability, optimized response times, and enabled smoother feature enhancements and operational efficiency.",
+      "Built and delivered scalable RESTful APIs, high-performance database systems, and FilamentPHP CMS solutions across banking, hospitality, and LMS platforms — integrating Cloudia CRM SSO authentication — resulting in improved system reliability, secure internal training workflows, and empowered non-technical teams to manage content independently across multiple production clients.",
   },
   {
     year: "May 2024 - Sep 2024",
