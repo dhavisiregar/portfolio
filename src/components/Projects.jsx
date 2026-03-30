@@ -14,6 +14,15 @@ import project11 from "../assets/12.png";
 
 const projects = [
   {
+    id: 12,
+    title: "CMS Development — Multiple Clients",
+    description:
+      "Built and delivered content management systems for multiple real-world clients across various industries using Laravel & Filament. Each CMS empowers non-technical teams to independently manage their website content — no code required. Clients include: Bank INA (banking), AAJI (insurance & corporate LMS), Hotel Osaka PIK 2, Sinabung Hotel, Eastern Hotel, (hospitality), CBNCloud (internal LMS), BDR, and NLIID (company profiles).",
+    image: project7,
+    link: "https://filamentphp.com/",
+    technologies: ["Laravel", "FilamentPHP", "PHP", "MySQL"],
+  },
+  {
     id: 1,
     title: "DuitFlow",
     description:
@@ -84,15 +93,6 @@ const projects = [
     image: project6,
     link: "https://rakamin-mini-project-eta.vercel.app/",
     technologies: ["React.js", "Tailwind", "TypeScript", "DND-Kit"],
-  },
-  {
-    id: 9,
-    title: "Filament Admin Dashboard",
-    description:
-      "Filament is a modern, responsive, and feature-rich admin dashboard template built with Tailwind CSS and React. It provides a clean and professional design that is easy to use and customize.",
-    image: project7,
-    link: "https://github.com/dhavisiregar/filament-app",
-    technologies: ["FilamentPHP", "PHP", "Laravel", "MySQL"],
   },
   {
     id: 10,
