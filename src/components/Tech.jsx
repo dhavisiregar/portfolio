@@ -7,7 +7,6 @@ import { SiTypescript } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandMysql } from "react-icons/tb";
 import { FaGolang } from "react-icons/fa6";
-import { FaCss3Alt } from "react-icons/fa";
 import { SiPrisma } from "react-icons/si";
 import { SiFilament } from "react-icons/si";
 import { SiExpress } from "react-icons/si";

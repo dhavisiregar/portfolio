@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import project1 from "../assets/1.png";
 import project2 from "../assets/2.png";
-import project3 from "../assets/8.png";
+import project3 from "../assets/13.png";
 import project4 from "../assets/4.png";
 import project6 from "../assets/6.png";
 import project5 from "../assets/5.png";
@@ -42,12 +42,12 @@ const projects = [
   },
   {
     id: 4,
-    title: "Redline Gokart Booking Web App",
+    title: "Redline Gokart Web",
     description:
-      "Redline Gokart was running on manual WhatsApp bookings — so I built a full online booking system from scratch. The app features real-time slot scheduling, instant WhatsApp notifications, and weekday/weekend dynamic pricing.",
+      "Built a responsive go-kart business website featuring race packages, facility information, and booking inquiries with a modern UI/UX.",
     image: project3,
     link: "https://redlinegokart.vercel.app/",
-    technologies: ["React.js", "Golang", "MySQL", "Docker", "Fonnte API"],
+    technologies: ["React.js", "Tailwind CSS", "Javascript"],
   },
   {
     id: 5,
