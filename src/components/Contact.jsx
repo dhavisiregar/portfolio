@@ -31,9 +31,9 @@ const Contact = () => {
     setSubmitStatus({ success: false, error: false, message: "" });
 
     try {
-      const serviceId = "service_5hr2447";
-      const templateId = "template_6tztbw9";
-      const publicKey = "f4pBNONcU5wssorok";
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
       await emailjs.send(
         serviceId,

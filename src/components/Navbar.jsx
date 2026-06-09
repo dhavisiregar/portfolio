@@ -107,7 +107,7 @@ const Navbar = () => {
         />
 
         <div className="flex flex-shrink-0 items-center">
-          <img src={logo} alt="logo" className="w-14 mx-2" />
+          <img src={logo} alt="Sultan Muhammad Dhavi - Portfolio" className="w-14 mx-2" />
         </div>
 
         {/* Desktop Navigation */}
@@ -121,6 +121,7 @@ const Navbar = () => {
                     activeSection === link.id ? "text-purple-700" : ""
                   }`}
                   aria-label={`Scroll to ${link.label}`}
+                  aria-current={activeSection === link.id ? "true" : undefined}
                 >
                   {link.label}
                 </button>
@@ -160,6 +161,7 @@ const Navbar = () => {
                         activeSection === link.id ? "text-purple-700" : ""
                       }`}
                       aria-label={`Scroll to ${link.label}`}
+                      aria-current={activeSection === link.id ? "true" : undefined}
                     >
                       {link.label}
                     </button>
