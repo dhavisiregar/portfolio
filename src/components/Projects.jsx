@@ -12,6 +12,7 @@ import project9 from "../assets/10.png";
 import project10 from "../assets/11.png";
 import project11 from "../assets/12.png";
 import project12 from "../assets/14.png";
+import project13 from "../assets/15.png";
 
 const projects = [
   {
@@ -25,6 +26,15 @@ const projects = [
   },
   {
     id: 2,
+    title: "GrocerGo — Online Grocery Web App",
+    description:
+      "GrocerGo is a full-stack, location-aware grocery e-commerce platform I designed and built solo, from backend to frontend to production deployment. It automatically matches customers to their nearest branch for accurate stock, pricing, and delivery cost, and includes a flexible discount and voucher engine, auditable inventory tracking, a role-based admin dashboard for order management, and integrations with Midtrans for payments, RajaOngkir for shipping rates, and OpenCage for geocoding.",
+    image: project13,
+    link: "https://grocergoo.vercel.app/",
+    technologies: ["Next.js", "Golang", "MySQL", "Midtrans"],
+  },
+  {
+    id: 3,
     title: "LeadFlow",
     description:
       "A full-stack CRM built from scratch — kanban pipeline, contact tracking, task management, revenue forecasting, and billing. All in one app.",
@@ -33,7 +43,7 @@ const projects = [
     technologies: ["React.js", "Golang", "PostgreSQL", "Midtrans"],
   },
   {
-    id: 3,
+    id: 4,
     title: "DuitFlow",
     description:
       "DuitFlow is a simple and intuitive app to help users easily track their income and expenses in one place, making it easier to understand spending habits and manage personal finances more effectively.",
@@ -42,7 +52,7 @@ const projects = [
     technologies: ["Next.js", "Golang", "PostgreSQL", "Midtrans"],
   },
   {
-    id: 4,
+    id: 5,
     title: "WA Invoice — Invoice & Pembayaran untuk UMKM",
     description:
       "Built WA Invoice to solve manual bookkeeping for Indonesian small businesses — create professional invoices in seconds, share directly via WhatsApp, and track payments in real-time. Deployed to production with a freemium monetization model.",
@@ -51,7 +61,7 @@ const projects = [
     technologies: ["Next.js", "Golang", "PostgreSQL", "Supabase"],
   },
   {
-    id: 5,
+    id: 6,
     title: "Redline Gokart Web",
     description:
       "Built a responsive go-kart business website featuring race packages, facility information, and booking inquiries with a modern UI/UX.",
@@ -60,7 +70,7 @@ const projects = [
     technologies: ["React.js", "Tailwind CSS", "Javascript"],
   },
   {
-    id: 6,
+    id: 7,
     title: "Split It",
     description:
       "A smart bill-splitting web app that uses AI vision to scan receipts and automatically extract items, tax, and service charge — then splits the total per person and shares the breakdown via WhatsApp.",
@@ -69,7 +79,7 @@ const projects = [
     technologies: ["React.js", "GROQ AI", "Tailwind"],
   },
   {
-    id: 7,
+    id: 8,
     title: "Masak Apa?",
     description:
       "Masak Apa? lets you input ingredients you have at home and instantly finds matching Indonesian recipes — with match percentage, missing ingredients, and step-by-step cooking instructions.",
@@ -78,7 +88,7 @@ const projects = [
     technologies: ["React.js", "Golang", "GROQ AI", "MySQL"],
   },
   {
-    id: 8,
+    id: 9,
     title: "Calorie Scanner",
     description:
       "Ever wondered how many calories are in that plate of nasi goreng? Just snap a photo and find out. Calorie Scanner uses AI to instantly estimate the nutrition info of any food — no manual logging, no guessing.",
@@ -87,40 +97,13 @@ const projects = [
     technologies: ["React.js", "GROQ AI", "Tailwind"],
   },
   {
-    id: 9,
+    id: 10,
     title: "Company Website",
     description:
       "Helvete Records, established in 1991, is a premier record label and retail destination dedicated to delivering the most intense and authentic metal music experience.",
     image: project1,
     link: "https://cc2-jcwd2804-dhavi.vercel.app/",
     technologies: ["Next.js", "Tailwind", "TypeScript"],
-  },
-  {
-    id: 10,
-    title: "Kanban Board",
-    description:
-      "A Kanban board is a visual tool for project management with columns representing stages of work, such as To Do, In Progress, and Done. Each task is represented by a card that moves across columns as progress is made. This board helps teams view the overall work, identify bottlenecks, and improve process efficiency.",
-    image: project6,
-    link: "https://rakamin-mini-project-eta.vercel.app/",
-    technologies: ["React.js", "Tailwind", "TypeScript", "DND-Kit"],
-  },
-  {
-    id: 11,
-    title: "Calculator App",
-    description:
-      "A modern calculator application with a clean interface and smooth animations.",
-    image: project4,
-    link: "https://calculator-cyan-pi.vercel.app/",
-    technologies: ["React.js", "Tailwind", "JavaScript"],
-  },
-  {
-    id: 12,
-    title: "Weather App",
-    description:
-      "This application allows you to get up-to-date weather information worldwide with a clean and intuitive interface.",
-    image: project5,
-    link: "https://weather-app-cyan-seven-46.vercel.app/",
-    technologies: ["React.js", "CSS", "JavaScript", "REST API"],
   },
 ];
 
