@@ -1,10 +1,15 @@
-import logo from "../assets/logo.png";
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import { images } from "../assets";
+import { UI_TEXT, SOCIAL_LINKS } from "../constants";
+import { useLanguage, useTranslate } from "../i18n/LanguageContext";
+import { useTheme } from "../theme/ThemeContext";
+import { FaSearch, FaSun, FaMoon } from "react-icons/fa";
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 
-const Navbar = () => {
+const Navbar = ({ onOpenPalette }) => {
+  const t = useTranslate();
+  const { language, toggleLanguage } = useLanguage();
+  const { theme, toggleTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -66,48 +71,64 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { id: "about", label: "About Me" },
-    { id: "technologies", label: "Technologies" },
-    { id: "experience", label: "Experience" },
-    { id: "projects", label: "Projects" },
-    { id: "contact", label: "Contact Me" },
-  ];
-
-  const socialLinks = [
-    {
-      href: "https://www.linkedin.com/in/sultan-muhammad-dhavi/",
-      icon: <FaLinkedin />,
-      label: "LinkedIn",
-    },
-    {
-      href: "https://github.com/dhavisiregar",
-      icon: <FaGithub />,
-      label: "GitHub",
-    },
-    {
-      href: "https://www.instagram.com/dhavisiregar/",
-      icon: <FaInstagram />,
-      label: "Instagram",
-    },
-    {
-      href: "https://x.com/plagoande",
-      icon: <FaSquareXTwitter />,
-      label: "Twitter",
-    },
+    { id: "about", label: t(UI_TEXT.nav.about) },
+    { id: "technologies", label: t(UI_TEXT.nav.technologies) },
+    { id: "experience", label: t(UI_TEXT.nav.experience) },
+    { id: "projects", label: t(UI_TEXT.nav.projects) },
+    { id: "contact", label: t(UI_TEXT.nav.contact) },
   ];
 
   return (
     <>
       {/* Fixed full-width navbar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm bg-black/10 flex items-center justify-between px-8">
+      <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm bg-surface/40 flex items-center justify-between px-8">
         {/* Scroll Progress Bar */}
         <div
-          className="absolute top-0 left-0 h-1 bg-purple-700 transition-all duration-300"
+          className="absolute top-0 left-0 h-1 bg-accent transition-all duration-300"
           style={{ width: `${scrollProgress}%` }}
         />
 
-        <div className="flex flex-shrink-0 items-center">
-          <img src={logo} alt="Sultan Muhammad Dhavi - Portfolio" className="w-14 mx-2" />
+        <div className="flex flex-shrink-0 items-center gap-3">
+          <img
+            src={images["logo.webp"]}
+            width={128}
+            height={130}
+            alt="Sultan Muhammad Dhavi - Portfolio"
+            className="w-14 mx-2"
+          />
+          <button
+            onClick={toggleLanguage}
+            aria-label={t(UI_TEXT.nav.languageToggleAria)}
+            className="flex items-center gap-1 rounded-full border border-border px-2.5 py-1 text-xs font-semibold transition-colors hover:border-accent/50"
+          >
+            <span className={language === "id" ? "text-accent" : "text-fg-muted"}>
+              ID
+            </span>
+            <span className="text-fg-muted">/</span>
+            <span className={language === "en" ? "text-accent" : "text-fg-muted"}>
+              EN
+            </span>
+          </button>
+          <button
+            onClick={toggleTheme}
+            aria-label={t(
+              UI_TEXT.nav.themeToggleAria,
+              theme === "dark"
+                ? t(UI_TEXT.nav.themeLight)
+                : t(UI_TEXT.nav.themeDark)
+            )}
+            className="flex items-center rounded-full border border-border p-1.5 text-xs text-fg-muted transition-colors hover:border-accent/50 hover:text-accent"
+          >
+            {theme === "dark" ? <FaSun /> : <FaMoon />}
+          </button>
+          <button
+            onClick={onOpenPalette}
+            aria-label={t(UI_TEXT.commandPalette.openAria)}
+            className="hidden items-center gap-1.5 rounded-full border border-border px-2.5 py-1 text-xs font-semibold text-fg-muted transition-colors hover:border-accent/50 sm:flex"
+          >
+            <FaSearch className="text-[10px]" />
+            <span>⌘K</span>
+          </button>
         </div>
 
         {/* Desktop Navigation */}
@@ -117,10 +138,10 @@ const Navbar = () => {
               <li key={link.id}>
                 <button
                   onClick={() => scrollToSection(link.id)}
-                  className={`hover:text-purple-700 transition-colors duration-300 ${
-                    activeSection === link.id ? "text-purple-700" : ""
+                  className={`hover:text-accent transition-colors duration-300 ${
+                    activeSection === link.id ? "text-accent" : ""
                   }`}
-                  aria-label={`Scroll to ${link.label}`}
+                  aria-label={t(UI_TEXT.nav.scrollToAria, link.label)}
                   aria-current={activeSection === link.id ? "true" : undefined}
                 >
                   {link.label}
@@ -135,7 +156,9 @@ const Navbar = () => {
           <button
             onClick={toggleMenu}
             className="text-2xl focus:outline-none p-2"
-            aria-label={isOpen ? "Close menu" : "Open menu"}
+            aria-label={
+              isOpen ? t(UI_TEXT.nav.closeMenu) : t(UI_TEXT.nav.openMenu)
+            }
             aria-expanded={isOpen}
           >
             {isOpen ? "✖️" : "☰"}
@@ -145,22 +168,22 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <AnimatePresence>
           {isOpen && (
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.2 }}
-              className="absolute top-16 right-0 w-full bg-black/95 shadow-lg md:hidden"
+              className="absolute top-16 right-0 w-full bg-surface/95 shadow-lg md:hidden"
             >
               <ul className="flex flex-col items-center gap-4 py-4">
                 {navLinks.map((link) => (
                   <li key={link.id}>
                     <button
                       onClick={() => scrollToSection(link.id)}
-                      className={`hover:text-purple-700 transition-colors duration-300 ${
-                        activeSection === link.id ? "text-purple-700" : ""
+                      className={`hover:text-accent transition-colors duration-300 ${
+                        activeSection === link.id ? "text-accent" : ""
                       }`}
-                      aria-label={`Scroll to ${link.label}`}
+                      aria-label={t(UI_TEXT.nav.scrollToAria, link.label)}
                       aria-current={activeSection === link.id ? "true" : undefined}
                     >
                       {link.label}
@@ -168,22 +191,22 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
-            </motion.div>
+            </m.div>
           )}
         </AnimatePresence>
 
         {/* Social Links */}
         <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-          {socialLinks.map((social) => (
+          {SOCIAL_LINKS.map((social) => (
             <a
               key={social.label}
               href={social.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="z-10 hover:text-purple-700 transition-colors duration-300"
-              aria-label={`Visit my ${social.label} profile`}
+              className="z-10 hover:text-accent transition-colors duration-300"
+              aria-label={t(UI_TEXT.nav.visitProfileAria, social.label)}
             >
-              {social.icon}
+              <social.icon />
             </a>
           ))}
         </div>
@@ -195,17 +218,17 @@ const Navbar = () => {
       {/* Scroll to Top Button */}
       <AnimatePresence>
         {showScrollTop && (
-          <motion.button
+          <m.button
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.5 }}
             transition={{ duration: 0.2 }}
             onClick={scrollToTop}
-            className="fixed bottom-8 right-8 z-50 w-12 h-12 bg-purple-700 hover:bg-purple-600 text-white rounded-full shadow-lg flex items-center justify-center text-xl transition-colors duration-300"
-            aria-label="Scroll to top"
+            className="fixed bottom-8 right-8 z-50 w-12 h-12 bg-accent hover:bg-accent-hover text-accent-ink rounded-full shadow-lg flex items-center justify-center text-xl transition-colors duration-300"
+            aria-label={t(UI_TEXT.nav.scrollToTopAria)}
           >
             ↑
-          </motion.button>
+          </m.button>
         )}
       </AnimatePresence>
     </>

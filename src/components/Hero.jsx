@@ -1,6 +1,7 @@
-import { HERO_CONTENT } from "../constants";
-import foto from "../assets/foto.png";
-import { motion } from "framer-motion";
+import { HERO_CONTENT, CONTACT, EXPERIENCES, UI_TEXT } from "../constants";
+import { useTranslate } from "../i18n/LanguageContext";
+import foto from "../assets/foto.webp";
+import { m } from "framer-motion";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -11,45 +12,82 @@ const container = (delay) => ({
   },
 });
 
+const currentRole = EXPERIENCES[0];
+
 const Hero = () => {
+  const t = useTranslate();
+
   return (
-    <div className="relative border-b border-neutral-900 pb-4 lg:mb-16">
+    <div className="relative border-b border-border pb-4 lg:mb-16">
       <div className="relative flex flex-wrap items-end">
         {/* Text side */}
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
-            <motion.h1
+            <m.span
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl"
+              className="mb-6 text-xs font-bold uppercase tracking-[0.18em] text-accent"
             >
-              Sultan Muhammad Dhavi
-            </motion.h1>
-            <motion.span
+              {currentRole?.role}
+            </m.span>
+            <m.h1
+              variants={container(0.2)}
+              initial="hidden"
+              animate="visible"
+              className="pb-7 font-display text-6xl italic leading-[1.05] tracking-tight text-fg lg:text-8xl"
+            >
+              Sultan Muhammad
+              <br />
+              Dhavi
+            </m.h1>
+            <m.span
               variants={container(0.5)}
               initial="hidden"
               animate="visible"
-              className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
+              className="mb-7 text-sm text-fg-muted"
             >
-              Back End Developer at CBNCloud
-            </motion.span>
-            <motion.p
-              variants={container(1)}
+              at {currentRole?.company} &middot; {CONTACT.address}
+            </m.span>
+            <m.p
+              variants={container(0.8)}
               initial="hidden"
               animate="visible"
-              className="my-2 max-w-xl py-6 font-light tracking-tighter text-justify"
+              className="my-2 max-w-xl py-2 text-justify leading-relaxed text-fg-subtle"
             >
-              {HERO_CONTENT}
-            </motion.p>
+              {t(HERO_CONTENT)}
+            </m.p>
+            <m.div
+              variants={container(1.1)}
+              initial="hidden"
+              animate="visible"
+              className="mt-6 flex flex-wrap gap-4"
+            >
+              <a
+                href="#projects"
+                className="rounded-md bg-accent px-6 py-3 text-sm font-semibold text-accent-ink transition-colors hover:bg-accent-hover"
+              >
+                {t(UI_TEXT.hero.viewProjects)}
+              </a>
+              <a
+                href="/CV.pdf"
+                download="Sultan-Muhammad-Dhavi-Resume.pdf"
+                aria-label={t(UI_TEXT.hero.downloadCVAria)}
+                className="rounded-md border border-border px-6 py-3 text-sm font-semibold text-fg transition-colors hover:bg-surface-raised"
+              >
+                {t(UI_TEXT.hero.downloadCV)}
+              </a>
+            </m.div>
           </div>
         </div>
 
         {/* Image side */}
         <div className="w-full lg:w-1/2 lg:p-8">
           <div className="flex justify-center items-end">
-            <motion.img
+            <m.img
               src={foto}
+              width={800}
+              height={1352}
               alt="Sultan Muhammad Dhavi"
               className="w-[60%] max-h-[600px] object-contain object-bottom drop-shadow-2xl"
               initial={{ x: 100, opacity: 0 }}

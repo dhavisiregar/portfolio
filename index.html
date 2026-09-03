@@ -2,9 +2,61 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dhavi's Portfolio</title>
+
+    <title>Sultan Muhammad Dhavi | Back End Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Sultan Muhammad Dhavi, a Back End Developer specializing in scalable RESTful APIs, database optimization, and CMS platforms with Laravel, Go, and FilamentPHP."
+    />
+    <link rel="canonical" href="https://dhavi-portfolio.vercel.app/" />
+
+    <link rel="icon" type="image/png" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sultan Muhammad Dhavi Portfolio" />
+    <meta property="og:url" content="https://dhavi-portfolio.vercel.app/" />
+    <meta property="og:title" content="Sultan Muhammad Dhavi | Back End Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio of Sultan Muhammad Dhavi, a Back End Developer specializing in scalable RESTful APIs, database optimization, and CMS platforms with Laravel, Go, and FilamentPHP."
+    />
+    <meta property="og:image" content="https://dhavi-portfolio.vercel.app/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sultan Muhammad Dhavi | Back End Developer" />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Sultan Muhammad Dhavi, a Back End Developer specializing in scalable RESTful APIs, database optimization, and CMS platforms with Laravel, Go, and FilamentPHP."
+    />
+    <meta name="twitter:image" content="https://dhavi-portfolio.vercel.app/og-image.jpg" />
+
+    <!-- Sets data-theme before first paint so a returning visitor's saved
+         theme (or their OS preference, first visit) applies immediately —
+         without this, the page would flash dark (the CSS default) then jump
+         to light for anyone who has light mode saved/preferred. Keep this in
+         sync with readInitialTheme() in src/theme/ThemeContext.jsx. -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("portfolio-theme");
+          var theme =
+            stored === "dark" || stored === "light"
+              ? stored
+              : window.matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark";
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (e) {
+          // localStorage/matchMedia unavailable — CSS default (dark) applies.
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

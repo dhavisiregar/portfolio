@@ -1,9 +1,36 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300..600;1,300..600&family=Manrope:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Theme tokens ("Refined Dark" / "Refined Light") — read by tailwind.config.js.
+   Dark is the default (no attribute needed); [data-theme="light"] overrides.
+   ThemeContext.jsx sets data-theme on <html>. */
 :root {
-  font-family: "Inter", sans-serif;
+  font-family: "Manrope", sans-serif;
+
+  --color-surface: #0e0c0a;
+  --color-surface-raised: #17140f;
+  --color-border: #2a2520;
+  --color-fg: #f3eee4;
+  --color-fg-subtle: #c9c2b6;
+  --color-fg-muted: #ada396;
+  --color-accent: #d9a54a;
+  --color-accent-hover: #c08f38;
+}
+
+[data-theme="light"] {
+  --color-surface: #f1eae0;
+  --color-surface-raised: #ffffff;
+  --color-border: #e3dacb;
+  --color-fg: #1a1712;
+  --color-fg-subtle: #4a4436;
+  --color-fg-muted: #8a8271;
+  /* Darker than dark-mode's accent — #d9a54a reads fine as text on a
+     near-black page, but fails contrast on a light one. This is deliberately
+     a different value (not just reused), tuned to stay ~4.5:1 against white
+     while still reading as the same amber family. */
+  --color-accent: #9c6b1f;
+  --color-accent-hover: #7d5518;
 }
