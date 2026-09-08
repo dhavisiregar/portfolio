@@ -194,12 +194,10 @@ export const PROJECTS = [
       en: "Every client needed a CMS shaped around a different domain (banking, hospitality listings, internal LMS content) on a shared Laravel/Filament foundation, so the admin panel and permission structure had to stay flexible per client without duplicating the codebase. Integrating CBNCloud's Cloudia CRM SSO also meant internal LMS users didn't need a separate login.",
     },
     images: [images["7.webp"]],
-    link: "https://filamentphp.com/",
-    // NOTE: this points at the Filament framework's own site, not a live
-    // demo of the actual client CMS work (client sites are private/banking
-    // & internal platforms) — double check this is the link you want a
-    // "Live" badge to point visitors at.
-    status: "live",
+    // Client work (banking/hospitality/internal platforms) — no public demo,
+    // same as Budget Controller (id: 11).
+    link: null,
+    status: "n/a",
     repoLink: null,
     technologies: ["Laravel", "FilamentPHP", "PHP", "MySQL"],
   },
