@@ -122,12 +122,8 @@ export const FUN_FACTS = [
     en: "I like metal music!",
   },
   {
-    id: "Saya suka nonton film!",
-    en: "I like watching movies!",
-  },
-  {
-    id: "Saya suka banget minum kopi!",
-    en: "I like drinking coffee!",
+    id: "FREE PALESTINE!",
+    en: "FREE PALESTINE!",
   },
 ];
 
