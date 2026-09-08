@@ -223,7 +223,7 @@ export const PROJECTS = [
     images: [images["15.webp"]],
     link: "https://grocergoo.vercel.app/",
     status: "live",
-    repoLink: null,
+    repoLink: "https://github.com/dhavisiregar/online-grocery",
     technologies: ["Next.js", "Golang", "MySQL", "Midtrans"],
   },
   {
@@ -248,7 +248,7 @@ export const PROJECTS = [
     images: [images["14.webp"]],
     link: "https://leadflowww.vercel.app/",
     status: "live",
-    repoLink: null,
+    repoLink: "https://github.com/dhavisiregar/leadflow",
     technologies: ["React.js", "Golang", "PostgreSQL", "Midtrans"],
   },
   {
@@ -273,7 +273,7 @@ export const PROJECTS = [
     images: [images["12.webp"]],
     link: "https://expense-manager-duitflow.vercel.app/",
     status: "live",
-    repoLink: null,
+    repoLink: "https://github.com/dhavisiregar/expense-manager",
     technologies: ["Next.js", "Golang", "PostgreSQL", "Midtrans"],
   },
   {
@@ -298,7 +298,7 @@ export const PROJECTS = [
     images: [images["11.webp"]],
     link: "https://wa-invoice.vercel.app/",
     status: "live",
-    repoLink: null,
+    repoLink: "https://github.com/dhavisiregar/wa-invoice",
     technologies: ["Next.js", "Golang", "PostgreSQL", "Supabase"],
   },
   {
@@ -323,7 +323,7 @@ export const PROJECTS = [
     images: [images["13.webp"]],
     link: "https://redlinegokart.vercel.app/",
     status: "live",
-    repoLink: null,
+    repoLink: "https://github.com/dhavisiregar/frontend-redline",
     technologies: ["React.js", "Tailwind CSS", "Javascript"],
   },
   {
@@ -348,7 +348,7 @@ export const PROJECTS = [
     images: [images["9.webp"]],
     link: "https://split-bill-snowy.vercel.app/",
     status: "live",
-    repoLink: null,
+    repoLink: "https://github.com/dhavisiregar/split-bill",
     technologies: ["React.js", "GROQ AI", "Tailwind"],
   },
   {
@@ -373,7 +373,7 @@ export const PROJECTS = [
     images: [images["2.webp"]],
     link: "https://maumasak.vercel.app/",
     status: "live",
-    repoLink: null,
+    repoLink: "https://github.com/dhavisiregar/masak-apa",
     technologies: ["React.js", "Golang", "GROQ AI", "MySQL"],
   },
   {
@@ -398,7 +398,7 @@ export const PROJECTS = [
     images: [images["10.webp"]],
     link: "https://caloriescanner.vercel.app/",
     status: "live",
-    repoLink: null,
+    repoLink: "https://github.com/dhavisiregar/calorie-scanner",
     technologies: ["React.js", "GROQ AI", "Tailwind"],
   },
   {
