@@ -43,8 +43,8 @@ export const EXPERIENCES = [
     role: "Back End Developer",
     company: "PT. Cyberindo Mega Persada",
     description: {
-      id: "Membangun dan menghadirkan RESTful API yang scalable, sistem database berperforma tinggi, dan solusi CMS FilamentPHP di berbagai platform perbankan, hospitality, dan LMS — mengintegrasikan autentikasi SSO Cloudia CRM — menghasilkan peningkatan keandalan sistem, alur kerja pelatihan internal yang aman, dan memberdayakan tim non-teknis untuk mengelola konten secara mandiri di berbagai klien produksi.",
-      en: "Built and delivered scalable RESTful APIs, high-performance database systems, and FilamentPHP CMS solutions across banking, hospitality, and LMS platforms — integrating Cloudia CRM SSO authentication — resulting in improved system reliability, secure internal training workflows, and empowered non-technical teams to manage content independently across multiple production clients.",
+      id: "Membangun dan menghadirkan RESTful API yang scalable, sistem database berperforma tinggi, dan solusi CMS FilamentPHP di berbagai platform perbankan, hospitality, dan LMS — mengintegrasikan autentikasi SSO Cloudia CRM — menghasilkan peningkatan keandalan sistem, alur kerja pelatihan internal yang aman, dan memberdayakan tim non-teknis untuk mengelola konten secara mandiri di berbagai klien produksi. Juga merancang dan membangun Budget Controller, sistem manajemen budget dan approval bertingkat berbasis microservices (Go/Echo) dengan micro-frontend React (Webpack Module Federation), terintegrasi dengan Cloudia SSO dan Mekari Jurnal untuk sinkronisasi akuntansi.",
+      en: "Built and delivered scalable RESTful APIs, high-performance database systems, and FilamentPHP CMS solutions across banking, hospitality, and LMS platforms — integrating Cloudia CRM SSO authentication — resulting in improved system reliability, secure internal training workflows, and empowered non-technical teams to manage content independently across multiple production clients. Also architected and built Budget Controller, a microservices-based (Go/Echo) budget management and multi-stage approval system with a React micro-frontend (Webpack Module Federation), integrated with Cloudia SSO and Mekari Jurnal for accounting sync.",
     },
   },
   {
@@ -149,6 +149,31 @@ export const FUN_FACTS = [
 //   - title / technologies: NOT translated (project names and tech names are
 //     proper nouns — same in both languages).
 export const PROJECTS = [
+  {
+    id: 11,
+    title: "Budget Controller — Enterprise Budget & Approval System",
+    description: {
+      id: "Sistem internal untuk merencanakan, melacak, dan menyetujui pengeluaran budget di seluruh divisi perusahaan — dibangun sebagai micro-frontend (React host + 3 remote via Webpack Module Federation) di atas 5 microservice Go/Echo independen yang berbagi satu database MySQL. Mencakup budgeting per COA/divisi/tahun, alur approval bertingkat untuk Form Request/Cash Advance/Request Special (Manager → GM → Director → Accounting → Finance), serta sinkronisasi langsung dengan Cloudia SSO dan Mekari Jurnal untuk pencatatan akuntansi.",
+      en: "An internal system for planning, tracking, and approving company-wide budget spend — architected as a micro-frontend (React host + three Module Federation remotes) on top of five independent Go/Echo microservices sharing one MySQL database. Covers budget planning per COA/division/year, multi-stage Form Request/Cash Advance/Request Special approval flows (Manager → GM → Director → Accounting → Finance), and direct sync with Cloudia SSO and Mekari Jurnal for accounting entries.",
+    },
+    longDescription: {
+      id: "Sistem internal untuk merencanakan, melacak, dan menyetujui pengeluaran budget di seluruh divisi perusahaan — dibangun sebagai micro-frontend (React host + 3 remote via Webpack Module Federation) di atas 5 microservice Go/Echo independen yang berbagi satu database MySQL. Mencakup budgeting per COA/divisi/tahun, alur approval bertingkat untuk Form Request/Cash Advance/Request Special (Manager → GM → Director → Accounting → Finance), serta sinkronisasi langsung dengan Cloudia SSO dan Mekari Jurnal untuk pencatatan akuntansi.",
+      en: "An internal system for planning, tracking, and approving company-wide budget spend — architected as a micro-frontend (React host + three Module Federation remotes) on top of five independent Go/Echo microservices sharing one MySQL database. Covers budget planning per COA/division/year, multi-stage Form Request/Cash Advance/Request Special approval flows (Manager → GM → Director → Accounting → Finance), and direct sync with Cloudia SSO and Mekari Jurnal for accounting entries.",
+    },
+    problemStatement: {
+      id: "Perencanaan budget, pengajuan pengeluaran, dan approval berjenjang berjalan tanpa satu sistem yang menyatukan semuanya — tidak ada satu sumber data soal sisa budget tiap divisi, tidak ada routing approval otomatis ke Manager/GM/Director yang tepat, dan tidak ada koneksi langsung ke sistem akuntansi perusahaan (Mekari Jurnal) setelah pengajuan disetujui.",
+      en: "Budget planning, spend requests, and multi-level approvals ran without a single system tying them together — no shared source of truth for how much each division could still spend, no automatic sign-off routing to the right Manager/GM/Director, and no direct link into the company's accounting system (Mekari Jurnal) once a request was approved.",
+    },
+    challenges: {
+      id: "Logika approval tidak bisa di-hardcode: apakah suatu divisi butuh sign-off GM/Director — dan di ambang batas nominal berapa — itu flag di data divisi itu sendiri, dan approval Manager/GM bersifat identity-based (persis orang yang ditunjuk Cloudia untuk divisi itu), bukan sekadar role-based, sementara tahap Director/Accounting/Finance tetap role-based — semua itu harus konsisten di 4 aplikasi React terpisah (micro-frontend) dan 5 service Go terpisah, masing-masing memegang bagiannya sendiri dari satu database MySQL yang sama, tanpa duplikasi business rule di tiap modul/service.",
+      en: "The approval logic couldn't be hardcoded: whether a division needs GM/Director sign-off — and at what amount thresholds — is a flag on the division's own data, and Manager/GM approval is identity-based (the exact person Cloudia designates for that division) rather than just role-based, while Director/Accounting/Finance stages stay role-based — all of that had to stay consistent across four separate React apps (micro-frontend) and five separate Go services, each owning its own slice of one shared MySQL database, without duplicating business rules per module or per service.",
+    },
+    images: [images["16.webp"]],
+    link: null, // internal-only tool, no public URL — see repoLink note below
+    status: "n/a",
+    repoLink: null, // private company repo (GitLab)
+    technologies: ["React", "Golang", "MySQL", "Webpack Module Federation"],
+  },
   {
     id: 1,
     title: "CMS Development — Multiple Clients",
@@ -507,6 +532,10 @@ export const UI_TEXT = {
     liveDemo: { id: "Demo Langsung", en: "Live Demo" },
     githubRepo: { id: "Repo GitHub", en: "GitHub Repo" },
     repoNotPublic: { id: "Repo tidak publik", en: "Repo not public" },
+    noLiveDemo: {
+      id: "Tool internal — tidak di-deploy publik",
+      en: "Internal tool — not publicly deployed",
+    },
   },
   contact: {
     heading: { id: "Hubungi", en: "Get In" },

@@ -204,14 +204,20 @@ const ProjectModal = ({ project, onClose }) => {
             </section>
 
             <div className="flex flex-wrap gap-3 pt-2">
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-md bg-accent px-4 py-2 text-sm font-semibold text-accent-ink transition-colors hover:bg-accent-hover"
-              >
-                {t(UI_TEXT.modal.liveDemo)}
-              </a>
+              {project.link ? (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-md bg-accent px-4 py-2 text-sm font-semibold text-accent-ink transition-colors hover:bg-accent-hover"
+                >
+                  {t(UI_TEXT.modal.liveDemo)}
+                </a>
+              ) : (
+                <span className="self-center text-sm italic text-fg-muted">
+                  {t(UI_TEXT.modal.noLiveDemo)}
+                </span>
+              )}
               {project.repoLink ? (
                 <a
                   href={project.repoLink}
