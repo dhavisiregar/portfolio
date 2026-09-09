@@ -223,6 +223,31 @@ export const PROJECTS = [
     technologies: ["Next.js", "Golang", "MySQL", "Midtrans"],
   },
   {
+    id: 12,
+    title: "Eventura — Event Management Platform",
+    description: {
+      id: "Platform ticketing event full-stack (monorepo Next.js + Go + MySQL): organizer membuat dan mempromosikan event, attendee mencari dan membeli tiket. Mencakup pencarian/filter/pagination, pembayaran via Midtrans Snap, voucher berkuota per event, review & rating pasca-event, sistem referral/poin/kupon, serta dashboard organizer dengan grafik revenue.",
+      en: "A full-stack event ticketing platform (Next.js + Go + MySQL monorepo): organizers create and promote events, attendees browse, search, and buy tickets. Includes search/filter/pagination, Midtrans Snap payments, quota-limited per-event vouchers, post-event reviews & ratings, a referral/points/coupon system, and an organizer dashboard with revenue charts.",
+    },
+    longDescription: {
+      id: "Platform ticketing event full-stack (monorepo Next.js + Go + MySQL): organizer membuat dan mempromosikan event, attendee mencari dan membeli tiket. Mencakup pencarian/filter/pagination, pembayaran via Midtrans Snap, voucher berkuota per event, review & rating pasca-event, sistem referral/poin/kupon, serta dashboard organizer dengan grafik revenue. Setiap write multi-baris (registrasi + bonus referral, checkout, cancel, webhook Midtrans, expiry sweep) berjalan dalam satu database transaction dengan row locking (SELECT ... FOR UPDATE) agar seat count, pemakaian voucher/kupon, dan ledger poin tidak drift saat diakses bersamaan.",
+      en: "A full-stack event ticketing platform (Next.js + Go + MySQL monorepo): organizers create and promote events, attendees browse, search, and buy tickets. Includes search/filter/pagination, Midtrans Snap payments, quota-limited per-event vouchers, post-event reviews & ratings, a referral/points/coupon system, and an organizer dashboard with revenue charts. Every multi-row write (registration + referral bonus, checkout, cancel, Midtrans webhook, expiry sweep) runs inside a single DB transaction with row locking (SELECT ... FOR UPDATE) so seat counts, voucher/coupon usage, and point ledgers never drift under concurrent requests.",
+    },
+    problemStatement: {
+      id: "Event organizer butuh satu platform untuk membuat dan mempromosikan event, mengelola tiket berbayar maupun gratis, serta memantau penjualan — sementara attendee butuh alur cari, filter, dan checkout tiket yang cepat dan bisa dipercaya, lengkap dengan diskon, poin, dan bukti pembayaran yang jelas.",
+      en: "Event organizers needed a single platform to create and promote events, manage both paid and free tickets, and track sales — while attendees needed a fast, trustworthy search-filter-checkout flow, complete with discounts, points, and clear proof of payment.",
+    },
+    challenges: {
+      id: "Tantangan utamanya adalah menjaga konsistensi data di bawah akses bersamaan: kursi/kuota tiket, kuota voucher, dan saldo poin semuanya bisa berubah lewat beberapa jalur berbeda (checkout, cancel, webhook Midtrans, sweeper expiry background) secara bersamaan, jadi semuanya perlu dibungkus dalam DB transaction dengan row locking. Ledger poin sendiri dibuat append-only (baris earn/redeem, saldo dihitung dari total) alih-alih melacak sisa saldo per batch dengan expiry FIFO — trade-off sadar demi kesederhanaan MVP. Auth JWT juga disimpan di cookie non-httpOnly supaya axios client dan Next.js proxy (verifikasi via jose) sama-sama bisa membacanya tanpa server-side proxy di tiap call API.",
+      en: "The core challenge was keeping data consistent under concurrent access: ticket seat/quota counts, voucher quotas, and point balances can all change through several different paths at once (checkout, cancel, the Midtrans webhook, a background expiry sweeper), so all of it had to be wrapped in DB transactions with row locking. The point ledger itself is append-only (earn/redeem rows, balance computed from the sum) rather than tracking per-batch remaining balance with FIFO expiry — a deliberate trade-off for MVP simplicity. Auth also keeps the JWT in a non-httpOnly cookie so both the axios client and the Next.js proxy (verified via jose) can read it without a server-side proxy on every API call.",
+    },
+    images: [images["17.webp"]],
+    link: "https://eventuraaa.vercel.app",
+    status: "live",
+    repoLink: "https://github.com/dhavisiregar/eventura",
+    technologies: ["Next.js", "Golang", "MySQL", "Midtrans"],
+  },
+  {
     id: 3,
     title: "LeadFlow",
     description: {
