@@ -261,7 +261,7 @@ export const PROJECTS = [
       id: "Tantangan utamanya ada di access control: tiap endpoint list harus di-scope di server (bukan cuma disembunyikan di UI) untuk 5 role dengan aturan visibilitas yang benar-benar beda — lead milik sendiri untuk Sales, satu tim untuk Unit Head, beberapa tim untuk Manager, atau seluruh tenant untuk Data Analyst — sambil tetap menjaga deal value selalu dihitung dari line item lead (bukan angka yang diedit terpisah), dan memisahkan stage pipeline dari status Active/On Hold/Won/Lost (Won/Lost butuh alasan dan hilang dari Kanban board tapi tetap terlihat & bisa diedit di Table view).",
       en: "Getting the access control right was the core challenge: every list endpoint needed server-side scoping (not just hidden UI) across five roles with genuinely different visibility rules — one Sales rep's own leads, a Unit Head's team, a Manager's several teams, or the whole tenant for a Data Analyst — while keeping deal value always derived from a lead's line items rather than a separately-edited number, and separating a lead's pipeline stage from its Active/On Hold/Won/Lost status (Won/Lost needs a reason and disappears from the Kanban board while staying visible and editable in the Table view).",
     },
-    images: [images["14.webp"]],
+    images: [images["14.png"]],
     link: "https://leadflowww.vercel.app/",
     status: "live",
     repoLink: "https://github.com/dhavisiregar/leadflow",
