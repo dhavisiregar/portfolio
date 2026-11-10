@@ -9,7 +9,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `npm run preview` — serve the production build locally
 - `npm run lint` — run ESLint over the whole project (flat config, `eslint.config.js`)
 
-There is no test suite and no test runner configured in this project. [.github/workflows/ci.yml](.github/workflows/ci.yml) runs `npm run lint` and `npm run build` on every push/PR to `main` (Node 20) — keep both passing locally before pushing, since there's no test suite to catch regressions otherwise.
+There is no test suite and no test runner configured in this project. [.github/workflows/ci.yml](.github/workflows/ci.yml) runs `npm run lint` and `npm run build` on every push/PR to `main` (Node 26) — keep both passing locally before pushing, since there's no test suite to catch regressions otherwise.
 
 ## Architecture
 
