@@ -343,6 +343,31 @@ export const PROJECTS = [
     technologies: ["React.js", "Tailwind CSS", "Javascript"],
   },
   {
+    id: 13,
+    title: "Redline Time Attack — Live Gokart Leaderboard",
+    description: {
+      id: "Leaderboard live satu halaman untuk kompetisi gokart Redline Time Attack (3–29 November 2026) — data diambil langsung dari Google Sheet yang diisi petugas, tanpa backend, dengan podium, countdown, riwayat lap per peserta, fitur share & tantangan ke teman, mode layar TV untuk venue, dan halaman cek data untuk panitia.",
+      en: "A single-page live leaderboard for the Redline Time Attack go-kart competition (3–29 November 2026) — data is pulled straight from a Google Sheet filled in by venue staff, with no backend, plus a podium, countdown, per-racer lap history, share & challenge links, a TV mode for the venue screen, and a data-check page for organizers.",
+    },
+    longDescription: {
+      id: 'Leaderboard live satu halaman untuk kompetisi gokart Redline Time Attack (3–29 November 2026). Petugas venue cukup menginput setiap sesi (nama, tanggal, best lap) ke Google Sheet; web membaca CSV yang di-publish, menghitung ranking di sisi klien, dan auto-refresh tiap 60 detik — tanpa backend, di-deploy sebagai static site di Vercel. Peserta bisa mencari namanya, menandai "Ini saya" untuk melihat posisi & selisih ke peserta di atasnya, membagikan posisi atau link tantangan ke teman, dan membuat kartu IG Story 1080×1920. Ada juga mode TV (#tv) dengan auto-scroll dan Wake Lock untuk layar di venue, halaman #admin untuk mengecek baris yang tidak terhitung dan nama yang mirip, mode demo otomatis sebelum kompetisi dimulai, tema terang/gelap, dan dukungan PWA.',
+      en: 'A single-page live leaderboard for the Redline Time Attack go-kart competition (3–29 November 2026). Venue staff just log each session (name, date, best lap) into a Google Sheet; the site reads the published CSV, computes the rankings client-side, and auto-refreshes every 60 seconds — no backend, deployed as a static site on Vercel. Racers can search for their name, mark "This is me" to see their position and gap to the racer above, share their position or a challenge link with friends, and generate a 1080×1920 IG Story card. There\'s also a TV mode (#tv) with auto-scroll and Wake Lock for the venue screen, an #admin page that flags uncounted rows and near-duplicate names, an automatic demo mode before the competition starts, light/dark themes, and PWA support.',
+    },
+    problemStatement: {
+      id: "Kompetisi time attack selama sebulan butuh papan peringkat yang selalu up-to-date dan bisa dilihat peserta dari HP maupun layar di venue, tapi petugas di lapangan hanya terbiasa mengisi spreadsheet — membangun dan merawat backend + admin panel khusus untuk event sementara tidak sepadan.",
+      en: "A month-long time-attack competition needed an always-current leaderboard racers could check from their phones and on the venue screen, but staff on the ground only knew how to fill in a spreadsheet — building and maintaining a dedicated backend and admin panel for a temporary event wasn't worth it.",
+    },
+    challenges: {
+      id: 'Karena sumber datanya spreadsheet yang diisi manual, parsing & ranking harus tahan terhadap input yang berantakan: nama dengan variasi kapitalisasi/spasi digabung jadi satu peserta, lap time dengan koma/titik/format menit, Google Sheets yang diam-diam mengubah "15.11" jadi tanggal, baris rusak atau di luar periode yang dilewati dengan alasan yang jelas di halaman admin, serta aturan tie-break (tanggal lebih awal, lalu urutan baris) — semuanya dikunci dengan unit test Vitest yang dijalankan di dua timezone berbeda dan memblokir deploy kalau gagal. Peralihan dari data demo ke data Sheet asli juga harus terjadi tepat waktu tanpa redeploy dan tanpa pernah menampilkan data demo tanpa banner.',
+      en: 'Because the data source is a hand-filled spreadsheet, parsing and ranking had to be robust to messy input: names with different casing/spacing merged into one racer, lap times with commas, dots, or minute formats, Google Sheets silently turning "15.11" into a date, broken or out-of-period rows skipped with a clear reason on the admin page, and the tie-break rules (earlier date, then row order) — all locked down with Vitest unit tests run under two different timezones that block the deploy on failure. The switch from demo data to the real Sheet also had to happen exactly on time without a redeploy, and never show demo data without its banner.',
+    },
+    images: [images["18.webp"]],
+    link: "https://redline-time-attack.vercel.app/",
+    status: "live",
+    repoLink: null, // private repo
+    technologies: ["React.js", "TypeScript", "Tailwind CSS", "Google Sheets"],
+  },
+  {
     id: 7,
     title: "Split It",
     description: {
